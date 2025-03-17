@@ -1,93 +1,974 @@
 {
-  "SR6.Attributes": "속성",
-  "SR6.Body": "체력",
-  "SR6.Agility": "민첩",
-  "SR6.Reaction": "반응",
-  "SR6.Strength": "근력",
-  "SR6.Willpower": "의지력",
-  "SR6.Logic": "논리력",
-  "SR6.Intuition": "직관력",
-  "SR6.Charisma": "매력",
-  "SR6.Edge": "에지",
-  "SR6.Magic": "마법",
-  "SR6.Resonance": "레조넌스",
-  "SR6.Essence": "에센스",
-  
-  "SR6.Skills": "기술",
-  "SR6.CombatSkills": "전투 기술",
-  "SR6.PhysicalSkills": "육체 기술",
-  "SR6.SocialSkills": "사회 기술",
-  "SR6.MagicalSkills": "마법 기술",
-  "SR6.ResonanceSkills": "레조넌스 기술",
-  "SR6.VehicleSkills": "차량 기술",
-  "SR6.TechnicalSkills": "기술적 기술",
-  
-  "SR6.Close Combat": "근접 전투",
-  "SR6.Firearms": "총기류",
-  "SR6.Athletics": "운동",
-  "SR6.Stealth": "은신",
-  "SR6.Influence": "영향력",
-  "SR6.Electronics": "전자",
-  "SR6.Engineering": "공학",
-  "SR6.Biotech": "생체공학",
-  "SR6.Conjuring": "소환",
-  "SR6.Enchanting": "마법부여",
-  "SR6.Sorcery": "주술",
-  "SR6.Tasking": "태스킹",
-  "SR6.Cracking": "크래킹",
-  
-  "SR6.Gear": "장비",
-  "SR6.Weapons": "무기",
-  "SR6.Armor": "방어구",
-  "SR6.Cyberware": "사이버웨어",
-  "SR6.Bioware": "바이오웨어",
-  "SR6.Spells": "주문",
-  "SR6.Spirits": "정령",
-  "SR6.Contacts": "컨택",
-  
-  "SR6.Combat": "전투",
-  "SR6.Initiative": "이니셔티브",
-  "SR6.Attack": "공격",
-  "SR6.Defense": "방어",
-  "SR6.Damage": "피해",
-  "SR6.Soak": "내성",
-  "SR6.Physical": "물리",
-  "SR6.Stun": "기절",
-  "SR6.Matrix": "매트릭스",
-  "SR6.Astral": "아스트랄",
-  
-  "SR6.Character": "캐릭터",
-  "SR6.Metatype": "메타타입",
-  "SR6.Human": "인간",
-  "SR6.Elf": "엘프",
-  "SR6.Dwarf": "드워프",
-  "SR6.Ork": "오크",
-  "SR6.Troll": "트롤",
-  
-  "SR6.Lifestyle": "생활방식",
-  "SR6.Street": "거리",
-  "SR6.Squatter": "무단점유자",
-  "SR6.Low": "저급",
-  "SR6.Medium": "중급",
-  "SR6.High": "고급",
-  "SR6.Luxury": "호화",
-  
-  "SR6.Nuyen": "뉴엔",
-  "SR6.Karma": "카르마",
-  "SR6.Reputation": "평판",
-  "SR6.StreetCred": "스트리트 크레드",
-  "SR6.Notoriety": "악명",
-  "SR6.PublicAwareness": "대중 인지도",
-  
-  "SR6.Save": "저장",
-  "SR6.Cancel": "취소",
-  "SR6.Delete": "삭제",
-  "SR6.Edit": "편집",
-  "SR6.Add": "추가",
-  "SR6.Remove": "제거",
-  "SR6.Roll": "굴림",
-  "SR6.Success": "성공",
-  "SR6.Failure": "실패",
-  "SR6.Glitch": "글리치",
-  "SR6.CriticalGlitch": "치명적 글리치"
-} 
+  "Shadowrun6ActorSheetNPC": "Grunty",
+  "shadowrun6-eden.Shadowrun6ActorSheetNPC": "Grunty Redshirt",
+  "SYSTEM": {
+    "Sidebar": {
+      "readme": "README",
+      "bugs": "버그 신고",
+      "feature": "기능 요청"
+    }
+  },
+  "ACTOR": {
+    "TypeCritter": "생물",
+    "TypeNpc": "졸개/NPC",
+    "TypePlayer": "플레이어 캐릭터",
+    "TypeSpirit": "정령",
+    "TypeVehicle": "차량/드론"
+  },
+  "ITEM": {
+    "TypeAdeptpower": "어뎁트 파워",
+    "TypeCritterpower": "생물 능력",
+    "TypeComplexform": "복합 형태",
+    "TypeContact": "연락책",
+    "TypeEcho": "에코",
+    "TypeGear": "장비",
+    "TypeLifestyle": "생활 방식",
+    "TypeMartialartstyle": "무술 스타일",
+    "TypeMartialarttech": "무술 기법",
+    "TypeMetamagic": "메타마법",
+    "TypeQuality": "자질",
+    "TypeRitual": "의식",
+    "TypeSin": "SIN",
+    "TypeSkill": "언어/지식 기술",
+    "TypeSpell": "주문",
+    "TypeWeapon": "무기"
+  },
+  "QUALITY_CATEGORIES": {
+    "ADVANTAGE": "긍정적 자질",
+    "DISADVANTAGE": "부정적 자질"
+  },
+  "TYPES": {
+    "Actor": {
+      "Critter": "생물",
+      "NPC": "졸개/NPC",
+      "Player": "플레이어 캐릭터",
+      "Spirit": "정령",
+      "Vehicle": "차량/드론"
+    },
+    "Item": {
+      "adeptpower": "어뎁트 파워",
+      "critterpower": "생물 능력",
+      "complexform": "복합 형태",
+      "contact": "연락책",
+      "echo": "에코",
+      "focus": "포커스",
+      "gear": "장비",
+      "lifestyle": "생활 방식",
+      "martialartstyle": "무술 스타일",
+      "martialarttech": "무술 기법",
+      "metamagic": "메타마법",
+      "quality": "자질",
+      "ritual": "의식",
+      "sin": "SIN",
+      "skill": "언어/지식 기술",
+      "software": "프로그램",
+      "spell": "주문",
+      "weapon": "무기"
+    }
+  },
+  "attrib": {
+    "agi": "민첩성",
+    "agi_short": "AGI",
+    "bod": "체력",
+    "bod_short": "BOD",
+    "cha": "카리스마",
+    "cha_short": "CHA",
+    "dr": "방어 등급",
+    "dr_short": "DR",
+    "edg": "엣지",
+    "edg_short": "EDG",
+    "ess": "에센스",
+    "ess_short": "ESS",
+    "ini": "이니셔티브",
+    "ini_short": "INI",
+    "inia": "아스트랄 이니셔티브",
+    "inia_short": "A.INI",
+    "inim": "매트릭스 이니셔티브",
+    "inim_short": "M.INI",
+    "int": "직관",
+    "int_short": "INT",
+    "log": "논리",
+    "log_short": "LOG",
+    "mag": "매직",
+    "mag_short": "MAG",
+    "rea": "반응",
+    "rea_short": "REA",
+    "res": "공명",
+    "res_short": "RES",
+    "str": "힘",
+    "str_short": "STR",
+    "wil": "의지력",
+    "wil_short": "WIL"
+  },
+  "label.skill": "기술",
+  "section.attributes": "속성",
+  "shadowrun6": {
+    "actor": {
+      "actions": "행동",
+      "actions_major": "주요",
+      "actions_minor": "보조",
+      "editable": "편집 가능",
+      "initiative": "이니셔티브",
+      "initiative_astral": "아스트랄 이니셔티브",
+      "metatype": "메타유형",
+      "name": "이름",
+      "nav": {
+        "basics": "기본",
+        "biography": "배경",
+        "combat": "전투",
+        "description": "설명",
+        "equip": "장비",
+        "input": "입력",
+        "magic": "마법",
+        "matrix": "매트릭스",
+        "overview": "개요",
+        "skills": "기술",
+        "vehicles": "차량"
+      },
+      "skills": "기술",
+      "spells": "주문"
+    },
+    "adeptpower": {
+      "activation": "활성화",
+      "activation_major": "주요 행동",
+      "activation_minor": "보조 행동",
+      "activation_passive": "지속",
+      "cost": "비용",
+      "haslevel": "레벨 있음",
+      "pp": "PP",
+      "perLevel": "레벨당"
+    },
+    "autosoft_types": {
+      "clearsight": "클리어사이트",
+      "electronic_warfare": "전자전",
+      "evasion": "회피",
+      "maneuver": "조종",
+      "stealth": "은신",
+      "targeting": "표적"
+    },
+    "critterpower": {
+      "actiontitle": "행동",
+      "action": {
+        "auto": "자동",
+        "major": "주요",
+        "minor": "보조"
+      }
+    },
+    "attack_rating": {
+      "astral": "마나 공격 등급",
+      "matrix": "매트릭스 공격 등급",
+      "physical": "물리 공격 등급",
+      "social": "사회 공격 등급",
+      "vehicle": "차량 공격 등급"
+    },
+    "combat": {
+      "togglePhysical": "물리 이니셔티브 사용",
+      "toggleMatrix": "매트릭스 이니셔티브 사용",
+      "toggleAstral": "아스트랄 이니셔티브 사용"
+    },
+    "complexform": {
+      "duration": "지속시간",
+      "fading": "페이딩 값",
+      "oppAttr1": "대항 속성 1",
+      "oppAttr2": "대항 속성 2",
+      "skill": "기술",
+      "threshold": "임계치"
+    },
+    "contact": {
+      "rating_short": "등급",
+      "rating": "인맥",
+      "loyalty": "충성도",
+      "loyalty_short": "충성",
+      "favors": "호의",
+      "favors_short": "호",
+      "type": "유형"
+    },
+    "defense": {
+      "astral": "아스트랄 전투",
+      "drain": "드레인 저항",
+      "fading": "페이딩 저항",
+      "damage_astral": "아스트랄 피해 저항",
+      "damage_physical": "물리 피해 저항",
+      "physical": "공격",
+      "spells_direct": "직접 주문",
+      "spells_indirect": "간접 주문",
+      "spells_other": "기타 주문",
+      "toxin": "독 저항"
+    },
+    "defense_rating": {
+      "label": "방어 등급",
+      "astral": "마나 방어 등급",
+      "matrix": "매트릭스 방어 등급",
+      "physical": "물리 방어 등급",
+      "social": "사회 방어 등급",
+      "vehicle": "차량 방어 등급"
+    },
+    "derived": {
+      "composure": "평정",
+      "defense_rating": "방어 등급",
+      "judge_intentions": "의도 파악",
+      "lift_carry": "들어올리기/운반",
+      "memory": "기억",
+      "matrix_perception": "매트릭스 인지",
+      "heal": {
+        "physical": "신체 치유",
+        "stun": "기절 치유"
+      }
+    },
+    "edge_action": {
+      "anticipation": "예측",
+      "big_speech": "대연설",
+      "bring_the_drama": "극적 연출",
+      "called_shot_disarm": "조준 사격-무장해제",
+      "called_shot_vitals": "조준 사격-급소",
+      "fire_from_cover": "엄폐 사격",
+      "knockout_blow": "녹아웃 일격",
+      "shank": "찌르기"
+    },
+    "edge_boost": {
+      "add_edge_pool": "주사위 풀에 엣지 추가",
+      "buy_auto_hit": "자동 성공 1회 구매",
+      "count_2_glitch": "대상의 2를 글리치로 간주",
+      "create_special": "특수 효과 연출",
+      "edge_action": "엣지 행동 - (1-5)",
+      "give_ally_1_edge": "동료에게 엣지 1 제공",
+      "heal_1_physic": "육체 피해 1점 회복",
+      "heal_1_stun": "기절 피해 1칸 회복",
+      "negate_1_edge": "적의 엣지 1 무효화",
+      "plus_1_roll": "주사위 1개에 +1",
+      "plus_3_ini": "이니셔티브 점수에 +3",
+      "reroll_failed": "실패한 주사위 모두 재굴림",
+      "reroll_one": "주사위 1개 재굴림"
+    },
+    "gear": {
+      "subtype": {
+        "ACCESSORY": "액세서리",
+        "AMMUNITION": "탄약",
+        "ARMOR_BODY": "방어구",
+        "ARMOR_SOCIAL": "방호 복장",
+        "ARMOR_CLOTHES": "일반 의류",
+        "ARMOR_HELMET": "헬멧",
+        "ARMOR_SHIELD": "방패",
+        "ASSAULT_CANNON": "돌격포",
+        "ATVS": "ATV",
+        "AUDIO": "음향 기기",
+        "AUDIO_ENHANCEMENT": "청각 증강",
+        "BIKES": "오토바이",
+        "BIOTECH": "바이오테크",
+        "BIOWARE_COSMETICS": "미용 바이오웨어",
+        "BIOWARE_CULTURED": "배양 바이오웨어",
+        "BIOWARE_STANDARD": "일반 바이오웨어",
+        "BIOWARE_IMPLANT_WEAPON": "바이오 임플란트 무기",
+        "BLADES": "도검",
+        "BOATS": "보트",
+        "BOWS": "활",
+        "BREAKING": "파괴 장비",
+        "BTL": "BTL",
+        "CANNONS_LAUNCHERS": "화포 및 발사기",
+        "CARS": "자동차",
+        "CLOSE_COMBAT": "근접전",
+        "CLUBS": "둔기",
+        "COMMLINK": "컴링크",
+        "COMMUNICATION": "통신 및 교란",
+        "CROSSBOWS": "석궁",
+        "CYBER_BODYWARE": "신체 사이버웨어",
+        "CYBER_COSMETICS": "미용 사이버웨어",
+        "CYBER_EARWARE": "귀 사이버웨어",
+        "CYBER_EYEWARE": "눈 사이버웨어",
+        "CYBER_HEADWARE": "두뇌 사이버웨어",
+        "CYBER_IMPLANT_WEAPON": "사이버 임플란트 무기",
+        "CYBER_LIMB_ACCESSORY": "사이버 팔다리 액세서리",
+        "CYBER_LIMB_ENHANCEMENT": "사이버 팔다리 강화",
+        "CYBER_LIMBS": "사이버 팔다리",
+        "CYBERDECK": "사이버덱",
+        "CYBERJACK": "사이버잭",
+        "DRUGS": "약물",
+        "ELECTRONIC_ACCESSORIES": "전자 액세서리",
+        "EXPLOSIVES": "폭발물",
+        "FIREARMS": "화기",
+        "FIREARMS_ACCESSORY": "무기 액세서리",
+        "FIXED_WING": "고정익 항공기",
+        "FOCI_ENCHANTING": "마법제작 포커스",
+        "FOCI_METAMAGIC": "메타마법 포커스",
+        "FOCI_POWER": "파워 포커스",
+        "FOCI_QI": "기 포커스",
+        "FOCI_SPELL": "주문 포커스",
+        "FOCI_SPIRIT": "정령 포커스",
+        "FOCI_WEAPON": "무기 포커스",
+        "GENOM_CHANGES": "게놈 변화",
+        "EXOTIC_METAGENETICS": "특이 메타유전자",
+        "MICRO_ENVIRONADAPT": "미세 환경 적응",
+        "COMPLEMENTAL_GENETICS": "보조 유전학",
+        "GRAPPLE_GUN": "갈고리 총",
+        "GRAV": "중력 구동 차량",
+        "GRENADES": "수류탄",
+        "GRENADES_MINI": "소형 수류탄",
+        "HOLDOUTS": "은닉 권총",
+        "HOVERCRAFT": "공기 부양선",
+        "ID_CREDIT": "신분증 및 크레드스틱",
+        "IMAGING": "영상 장비",
+        "INDUSTRIAL_CHEMICALS": "산업 화학물질",
+        "INSTRUMENT": "악기",
+        "INSTRUMENT_ACCESSORY": "악기 액세서리",
+        "LARGE_DRONES": "대형 드론",
+        "LAUNCHERS": "발사기",
+        "LAV": "저고도 차량 (벡터 추력)",
+        "LTAV": "경비행선",
+        "LIVING_PERSONA": "생체 페르소나",
+        "MACHINE_GUNS": "기관총",
+        "MACHINE_PISTOLS": "기관권총",
+        "MAGICAL_FORMULA": "마법 공식",
+        "MAGIC_SUPPLIES": "마법 재료",
+        "MICRODRONES": "극소형 드론",
+        "MINIDRONES": "초소형 드론",
+        "MEDIUM_DRONES": "중형 드론",
+        "PREPARATION": "준비물",
+        "PREPARATION_EXTENDED": "강화 준비물",
+        "MISSILES": "미사일",
+        "MODIFICATION": "개조",
+        "MOD_LAYOUT": "레이아웃 개조",
+        "MOD_CORE": "코어 개조",
+        "MOD_TIRES": "타이어",
+        "MOD_HANDLING": "조종성 개조",
+        "MOD_TRAILER": "트레일러 및 사이드카",
+        "MOD_INTERIOR": "좌석 및 적재 개조",
+        "MOD_CARGO": "화물 개조",
+        "MOD_FORM": "형태 개조",
+        "MOD_ARMOR": "기반 개조",
+        "MOD_ELEMENTS": "환경 개조",
+        "MOD_ACC": "가속 개조",
+        "MOD_EFFICIENCY": "효율 개조",
+        "MOD_SPEED": "속도 개조",
+        "MOD_COAT": "전자 위장 도장",
+        "MOD_MISC": "기타 전자 개조",
+        "MOD_PILOT": "조종 장치 개조",
+        "MOD_MOUNT": "무기 장착대",
+        "MOD_RACK": "드론 거치대",
+        "MOD_OTHERS": "기타 장착부 개조",
+        "MOD_PROPULSION": "보조 추진 장치",
+        "NANOWARE_HARD": "고정형 나노웨어 시스템",
+        "NANOWARE_SOFT": "유연형 나노웨어 시스템",
+        "NANO_CYBERWARE": "나노 사이버웨어",
+        "NANOTECH_EQUIPMENT": "나노기술 장비",
+        "OPTICAL": "광학",
+        "OTHER_PROGRAMS": "기타 프로그램",
+        "OTHER_CLOSE": "기타 근접 무기",
+        "OTHER_SPECIAL": "특수 무기",
+        "PISTOLS_HEAVY": "대형 권총",
+        "PISTOLS_LIGHT": "소형 권총",
+        "PROJECTILES": "투척 무기",
+        "RFID": "RFID",
+        "#RIFLES": "소총",
+        "RIFLE_ASSAULT": "돌격소총",
+        "RIFLE_HUNTING": "사냥용 소총",
+        "RIFLE_SNIPER": "저격소총",
+        "RIGGER_CONSOLE": "리거 콘솔",
+        "ROCKETS": "로켓",
+        "ROTORCRAFT": "회전익 항공기",
+        "SECURITY": "보안",
+        "SENSOR": "센서",
+        "SENSOR_HOUSING": "센서 장착부",
+        "SHOTGUNS": "산탄총",
+        "SKILLSOFT": "스킬소프트",
+        "SLAP_PATCHES": "패치",
+        "SMALL_DRONES": "소형 드론",
+        "SNIPER_RIFLES": "저격소총",
+        "SOFTWARE": "소프트웨어",
+        "SPACECRAFT": "우주선",
+        "SPECIAL_WEAPONS": "특수 무기",
+        "SUBMACHINE_GUNS": "기관단총",
+        "SUBMARINES": "잠수함",
+        "SURVIVAL_GEAR": "생존 장비",
+        "SYMBIONTS": "공생체"
+      }
+    },
+    "initiative": {
+      "astral": "아스트랄",
+      "physical": "물리",
+      "matrix": "매트릭스"
+    },
+    "item": {
+      "accessories": "부속품",
+      "strWeapon": "힘 사용",
+      "ammunition": "탄약",
+      "attackvalues": "공격 등급",
+      "availability": "입수",
+      "capacity": "용량",
+      "category": "분류",
+      "damage": "피해",
+      "defencerating": "방어 등급",
+      "description": "설명",
+      "essence": "에센스",
+      "feature": "기능",
+      "firemode": {
+        "SS": "단발",
+        "SA": "반자동",
+        "BF": "점사",
+        "FA": "전자동"
+      },
+      "mastyle": {
+        "category": {
+          "grappling": "잡기",
+          "mobility": "기동",
+          "ranged": "사격",
+          "striking": "타격",
+          "weapon": "무기"
+        }
+      },
+      "mode": "모드",
+      "mode_ss": "단발",
+      "mode_sa": "반자동",
+      "mode_bf": "점사",
+      "mode_fa": "자동",
+      "mode_fa_1m": "반경 1m",
+      "mode_fa_2m": "반경 2m",
+      "mode_fa_3m": "반경 3m",
+      "mode_fa_4m": "반경 4m",
+      "mode_fa_5m": "반경 5m",
+      "mode_fa_6m": "반경 6m",
+      "natural": "자연 방어",
+      "physical_damage": "P",
+      "physical_special_damage": "S",
+      "price": "가격",
+      "skill": "기술",
+      "skillspec": "전문화",
+      "social": "사회",
+      "stun_damage": "S",
+      "subtype": "하위 유형",
+      "type": "유형",
+      "vehicle": {
+        "armor.long": "장갑",
+        "armor.short": "A",
+        "rigRating.long": "조종 장치",
+        "sensor.long": "센서",
+        "sensor.short": "S"
+      }
+    },
+    "itemtype": {
+      "ACCESSORY": "액세서리",
+      "AMMUNITION": "탄약",
+      "ARMOR": "방어구",
+      "ARMOR_ADDITION": "방어구 부착물",
+      "BIOLOGY": "생물학",
+      "BIOWARE": "바이오웨어",
+      "CHEMICALS": "화학물질",
+      "CYBERWARE": "사이버웨어",
+      "DRONES": "드론",
+      "ELECTRONICS": "전자기기",
+      "GENETICS": "유전자 제품",
+      "MAGICAL": "마법",
+      "NANOWARE": "나노웨어",
+      "SOFTWARE": "소프트웨어",
+      "SURVIVAL": "생존 장비",
+      "TOOLS": "도구",
+      "VEHICLES": "차량",
+      "WEAPON_CLOSE_COMBAT": "무기, 근접",
+      "WEAPON_FIREARMS": "무기, 화기",
+      "WEAPON_RANGED": "무기, 투척",
+      "WEAPON_SPECIAL": "무기, 특수"
+    },
+    "label": {
+      "accessories": "부속품",
+      "adepts": "어뎁트",
+      "action": "행동",
+      "actionduration": {
+        "minor.short": "소",
+        "major.short": "대"
+      },
+      "attack_rating": "공격 등급",
+      "attack_rating_short": "AR",
+      "attack_rating_using_vehicle": "공격 등급(차량 무기 사용)",
+      "attribute": "속성",
+      "details": "세부..",
+      "trait": "특성",
+      "trait_pool": "특성/풀",
+      "base": "기본",
+      "belongs_to": "소속",
+      "column": {
+        "action": "행동",
+        "count": "#",
+        "name": "이름",
+        "nameAnimate": "이름",
+        "rating": "등급"
+      },
+      "attack.short": "A",
+      "attack.long": "공격",
+      "sleaze.short": "S",
+      "sleaze.long": "슬리즈",
+      "dataproc.short": "D",
+      "dataproc.long": "데이터 처리",
+      "firewall.short": "F",
+      "firewall.long": "방화벽",
+      "devicerating.short": "DR",
+      "devicerating.long": "기기 등급",
+      "d6": "D6",
+      "damage": "피해",
+      "damage_short": "피해",
+      "defense": "방어",
+      "defense_against": "방어 대상",
+      "defense_rating": "방어 등급",
+      "delete": "삭제",
+      "device_mode": "장치 모드",
+      "devRating": "기기 등급",
+      "dual_hand": "양손",
+      "dice": "주사위",
+      "edit": "편집",
+      "expertise": "전문성",
+      "extended_test": "연장 테스트",
+      "faster": "가속",
+      "features": "기능",
+      "firemode_current": "현재 사격 모드",
+      "firemodes": "사격 모드",
+      "force": "포스",
+      "gender": "성별",
+      "legality.illegal.short": "I",
+      "legality.illegal.long": "불법",
+      "legality.legal.short": "L",
+      "legality.legal.long": "합법",
+      "level": "레벨 있음",
+      "mages": "마법사",
+      "matrixMonitor": "매트릭스 모니터",
+      "max": "최대",
+      "mode_of_operation": "동작 모드",
+      "modifications": "개조",
+      "modifier": "수정치",
+      "name": "이름",
+      "none": "-",
+      "not_present": "없음",
+      "offroad": "오프로드",
+      "onroad": "온로드",
+      "points": "점",
+      "pool": "풀",
+      "poolmod": "풀 수정치",
+      "programs.short": "P",
+      "progSlots": "프로그램 슬롯",
+      "rating": "등급",
+      "rating1": "등급 1",
+      "rating2": "등급 2",
+      "rating3": "등급 3",
+      "slower": "감속",
+      "soaked": "저항된 피해: {soaked}/{threshold}",
+      "specialization": "전문화",
+      "speed_detail": "당신은 시속 {speed}km로 이동 중입니다 ({speedPerTurn}미터/턴). 판정 수정치는 {modifier}입니다.",
+      "threshold": "임계치",
+      "type": "유형",
+      "value": "값",
+      "wilddie": "와일드 주사위"
+    },
+    "lifestyle": {
+      "cost": "비용",
+      "paid": "지불",
+      "type": "유형",
+      "sin": "연결된 SIN",
+      "street": "거리",
+      "squatter": "빈민가",
+      "low": "저급",
+      "middle": "중산층",
+      "high": "고급",
+      "luxury": "호화"
+    }
+  },
+  "qualityedit": {
+    "category": "카테고리",
+    "description": "설명",
+    "explain": "해설",
+    "name": "이름",
+    "new": "새로 만들기"
+  },
+  "ritualfeatures": {
+    "anchored": "고정됨",
+    "material_link": "물질 연결",
+    "minion": "하수인",
+    "spell": "주문",
+    "spotter": "관측자"
+  },
+  "roll": {
+    "accumulated": "누적됨",
+    "actionText": {
+      "attack_target_multiple": "{name}으로 여러 대상 공격",
+      "attack_target_none": "{name}으로 대상 공격",
+      "attack_target_one": "{target}에게 {name} 공격",
+      "cast_target_multiple": "{name}을(를) 여러 대상에게 시전",
+      "cast_target_none": "{name} 시전",
+      "cast_target_one": "{target}에게 {name} 시전",
+      "skill": "기술 판정",
+      "thread": "{name} 스레딩",
+      "defense": {
+        "physical": "물리 공격 방어",
+        "spells_direct": "직접 주문 방어",
+        "spells_indirect": "간접 주문 방어"
+      },
+      "soak": {
+        "drain": "{damage} 드레인 저항",
+        "fading": "{damage} 페이딩 저항",
+        "damage_phys": "{damage} 물리 피해 저항",
+        "damage_stun": "{damage} 기절 피해 저항"
+      }
+    },
+    "apply_damage": "피해 적용",
+    "damage_applied": "피해 적용됨",
+    "damage_revert": "피해를 되돌릴까요?",
+    "ar_0": "근거리",
+    "ar_1": "가까움",
+    "ar_2": "중거리",
+    "ar_3": "원거리",
+    "ar_4": "극한",
+    "attack": "공격",
+    "attackRating": "공격 등급",
+    "bf_type": "유형",
+    "bf": {
+      "narrow_burst": "좁은 점사",
+      "wide_burst": "넓은 점사"
+    },
+    "button": {
+      "defense": "방어 굴림",
+      "drain": "드레인 저항",
+      "soak": "피해 흡수"
+    },
+    "cantDodgeBullets": "거리 설정 후 상황에 따라 난이도 증가",
+    "configure": "굴림 설정",
+    "wound-modifier": "부상 수정치 적용",
+    "sustained-spell-modifier": "지속 주문 수정치 적용",
+    "criticalglitch": "치명적 글리치",
+    "heal_apply": "치유",
+    "damage": "피해: ",
+    "damage_apply": "피해 적용",
+    "defRating": "방어 등급"
+  },
+  "rollType": {
+    "bought": "성공 구매",
+    "normal": "주사위 굴림"
+  },
+  "section": {
+    "adeptpowers": {
+      "add": "새 파워 추가",
+      "column.points": "PP",
+      "title": "어뎁트 파워"
+    },
+    "ammo": "탄약",
+    "ammo_add": "탄약 추가",
+    "armor": {
+      "add": "새 방어구 추가",
+      "column": {
+        "action": "행동",
+        "defense": "방어 등급",
+        "name": "이름",
+        "social": "사회"
+      },
+      "title": "방어구"
+    },
+    "armor_adds": "방어구 개조",
+    "biology": "생물학",
+    "bodyware": {
+      "add": "새 바이오웨어 또는 사이버웨어 추가",
+      "column.capacity": "용량",
+      "column.essence": "에센스",
+      "footer.total_essence": "남은 에센스",
+      "title": "신체 개조"
+    },
+    "chemicals": "화학물질",
+    "complexforms": {
+      "add": "새 복합 형태 추가",
+      "column.duration": "지속",
+      "column.fade": "페이드",
+      "title": "복합 형태"
+    },
+    "contacts": {
+      "add": "새 연락책 추가",
+      "title": "연락책"
+    },
+    "critterpowers": {
+      "add": "크리터 파워 추가",
+      "title": "파워"
+    },
+    "defense": "방어 및 저항",
+    "derived": "파생 수치",
+    "drones": {
+      "add": "새 드론 추가",
+      "title": "드론"
+    },
+    "electronics": "전자기기",
+    "echo": {
+      "add": "새 에코 추가",
+      "title": "에코"
+    },
+    "initiative": "이니셔티브",
+    "martialarts": {
+      "add": "새 스타일 추가",
+      "tech_add": "새 기법 추가",
+      "title": "무술"
+    },
+    "focus": {
+      "add": "새 포커스 추가",
+      "column.rating": "포스",
+      "title": "포커스"
+    },
+    "gear": {
+      "add": "새 장비 추가",
+      "title": "장비"
+    },
+    "karma": {
+      "title": "카르마, 히트, 평판",
+      "karma": "카르마",
+      "heat": "히트",
+      "reputation": "평판",
+      "total": "합계"
+    },
+    "lifestyles": {
+      "add": "새 생활 방식 추가",
+      "title": "생활 방식"
+    },
+    "magical": "마법",
+    "matrix_base": {
+      "overwatch": "오버워치"
+    },
+    "matrix_actions": {
+      "title": "매트릭스 행동"
+    },
+    "matrix_combat": {
+      "title": "매트릭스 전투"
+    },
+    "matrix_devices": {
+      "add": "새 매트릭스 장치 추가",
+      "add_rcc": "새 리거 명령 콘솔 추가",
+      "column": {
+        "action": "행동",
+        "devRating": "장치 등급",
+        "name": "이름"
+      },
+      "title": "매트릭스 장치",
+      "title_rcc": "RCC"
+    },
+    "metamagic": {
+      "add": "새 메타매직 추가",
+      "title": "메타매직"
+    },
+    "notes": {
+      "title": "노트"
+    },
+    "persona": {
+      "distribute": "배분",
+      "title": "페르소나"
+    },
+    "qualities": "자질",
+    "qualities_add": "추가",
+    "rigging": {
+      "title": "리깅"
+    },
+    "rituals": {
+      "add": "새 의식 추가",
+      "column.threshold": "임계치",
+      "title": "의식"
+    },
+    "sins": {
+      "add": "새 SIN 추가",
+      "title": "SIN"
+    },
+    "skills.action": "기술",
+    "skills.knowledge": "지식 기술",
+    "skills.knowledge_add": "새 지식 추가",
+    "skills.language": "언어 기술",
+    "skills.language-level": {
+      "expert": "전문가",
+      "native": "원어민",
+      "normal": "일반",
+      "special": "특수"
+    },
+    "skills.language_add": "새 언어 기술 추가",
+    "software": {
+      "add": "새 소프트웨어 추가",
+      "title": "소프트웨어"
+    },
+    "spells": {
+      "add": "새 주문 추가",
+      "column.alchemic": "연금",
+      "column.drain": "드레인",
+      "column.range": "사거리",
+      "column.sustained": "지속",
+      "title": "주문"
+    },
+    "sustained": {
+      "add": "새 지속 주문 추가",
+      "title": "지속 주문"
+    },
+    "survival": "생존",
+    "vehicles": {
+      "add": "새 차량 추가",
+      "column": {
+        "handling": "조종",
+        "acc": "가속",
+        "spdi": "인터페이스",
+        "tspd": "속도",
+        "bod": "체력",
+        "arm": "장갑",
+        "pil": "파일럿",
+        "sen": "센서",
+        "sea": "좌석",
+        "vtype": "유형"
+      },
+      "title": "차량"
+    },
+    "vehicleskills": {
+      "brain": "전자 두뇌",
+      "operations": "운용"
+    },
+    "weapon": {
+      "add": "새 무기 추가",
+      "close": "근접 무기",
+      "ranged": "원거리 무기",
+      "special": "특수 무기",
+      "title": "무기"
+    }
+  },
+  "settings": {
+    "maxEdgePerRound": {
+      "hint": "플레이어나 NPC가 턴당 얻을 수 있는 최대 엣지를 정의합니다.",
+      "name": "턴당 최대 엣지 획득량"
+    },
+    "importToCompendium": {
+      "hint": "가져온 NPC를 액터로 추가할지, NPC 컴펜디엄의 항목으로 추가할지를 정의합니다.",
+      "name": "컴펜디엄으로 가져오기"
+    },
+    "defaultThreshold": {
+      "hint": "모든 기술 판정에 사용될 기본 임계치를 정의합니다.",
+      "name": "기본 임계치"
+    },
+    "hardDiceCap": {
+      "hint": "일반적으로 판정에서 주사위 풀은 최대 20개로 제한됩니다. 특정 효과나 능력으로도 이를 초과할 수 없으나, 엣지를 사용하여 주사위를 추가하는 경우는 예외입니다.",
+      "name": "하드 주사위 한도"
+    },
+    "bleeding": {
+      "hint": "심각한 부상으로 인한 지속 피해를 나타내는 규칙을 사용합니다. (SWC p.145)",
+      "name": "출혈"
+    },
+    "hackSlashMatrix": {
+      "hint": "Hack & Slash 규칙서의 매트릭스 행동을 캐릭터 시트에 표시합니다. (HS p.28)",
+      "name": "Hack & Slash 매트릭스 행동"
+    },
+    "armorLessensDmg": {
+      "hint": "방어구가 물리 피해를 줄이는 규칙을 사용합니다. 피해 저항 후 8점의 방어 등급마다 물리 피해 1칸을 기절 피해로 전환합니다. (SWC p.149)",
+      "name": "방어구로 인한 피해 감소"
+    },
+    "rollStrengthCombat": {
+      "hint": "근접 공격 시 특정 조건(무장하지 않거나 무기 무게를 이용한 공격)에 따라 민첩 대신 힘으로 판정합니다. 이때 공격 등급에는 민첩 대신 힘이 추가됩니다. (SWC p.150)",
+      "name": "근접 전투 시 민첩 대신 힘 사용"
+    },
+    "highStrengthAddsDamage": {
+      "hint": "힘이 7 이상이면 근접 피해값(DV)이 1 증가하며, 힘이 10 이상이면 피해값(DV)이 2 증가합니다. 힘의 영향을 받지 않는 무기는 해당되지 않습니다. (SWC p.150)",
+      "name": "높은 힘으로 인한 피해 증가"
+    },
+    "highStrengthReducesRecoil": {
+      "hint": "힘이 높으면 발사 모드에 따른 공격 등급 페널티를 줄입니다. 힘이 7 이상이면 페널티가 1 감소하고, 10 이상이면 2 감소합니다. 양손으로 무기를 잡아야 합니다. (SWC p.150)",
+      "name": "높은 힘으로 인한 반동 감소"
+    },
+    "cantDodgeBullets": {
+      "hint": "공격에 대한 대항 판정을 단순 판정으로 바꿉니다. 대상은 여전히 엣지를 사용하여 공격자의 주사위에 영향을 줄 수 있습니다. (SWC p.151)",
+      "name": "총알 회피 불가 규칙 사용"
+    }
+  },
+  "sin": {
+    "quality": "자질",
+    "real_sin": "진짜 SIN",
+    "anyone": "누구나",
+    "rough_match": "대충 일치",
+    "good_match": "괜찮은 일치",
+    "superficially_plausible": "표면상 그럴싸함",
+    "highly_plausible": "매우 그럴싸함",
+    "second_life": "두 번째 인생"
+  },
+  "softwareedit": {
+    "description": "설명",
+    "category": "카테고리",
+    "basic": "기본",
+    "hacking": "해킹"
+  },
+  "special": {
+    "astral": {
+      "astral_combat": "아스트랄 전투",
+      "astral_signatures": "아스트랄 서명",
+      "emotional_stress": "정서적 스트레스",
+      "spirit_types": "정령 유형"
+    },
+    "athletics": {
+      "archery": "궁술",
+      "climbing": "등반",
+      "flying": "비행",
+      "free_fall": "자유 낙하",
+      "gymnastics": "체조",
+      "sprinting": "전력 질주",
+      "swimming": "수영",
+      "throwing": "투척"
+    }
+  },
+  "ui": {
+    "notifications": {
+      "You_are_not_owner_of_the_target": "대상의 소유자가 아닙니다.",
+      "Target_or_select_a_token_before_rolling": "주사위를 굴리기 전에 토큰을 선택하거나 대상으로 지정하세요.",
+      "Dice_roll_evaluation_failed": "주사위 굴림 평가 실패",
+      "attack_with_no_AR": "공격 등급이 0인 상태로 공격하려고 합니다. 예: 거리 때문입니다.",
+      "apply_manually": "피해를 수동으로 적용하세요."
+    }
+  },
+  "EFFECT": {
+    "chilled": "냉각",
+    "confused": "혼란",
+    "corrosive": "부식",
+    "cover": "엄폐",
+    "dazed": "멍함",
+    "deafened": "귀먹음",
+    "fatigued": "피로",
+    "frightened": "공포",
+    "hazed": "흐림",
+    "hobbled": "절뚝거림",
+    "immobilized": "이동 불가",
+    "offbalance": "균형 상실",
+    "aceinthehand": "사회: 결정적 우위",
+    "fishoutofwater": "사회: 어색함",
+    "misdirected": "사회: 오도됨",
+    "follower": "사회: 추종자",
+    "sensorLock": "센서 고정",
+    "silent": "무음",
+    "silent_improved": "강화된 소음",
+    "wet": "젖음",
+    "zapped": "감전"
+  },
+  "skill": {
+    "astral": "아스트랄",
+    "athletics": "운동",
+    "biotech": "생명공학",
+    "close_combat": "근접 전투",
+    "con": "사기",
+    "conjuring": "소환",
+    "cracking": "해킹",
+    "electronics": "전자공학",
+    "enchanting": "마법제작",
+    "engineering": "기술공학",
+    "exotic_weapons": "특수 무기",
+    "firearms": "화기",
+    "influence": "영향력",
+    "outdoors": "야외 활동",
+    "perception": "인지력",
+    "piloting": "조종",
+    "sorcery": "마법",
+    "stealth": "은신",
+    "tasking": "테크노맨서 작업"
+  },
+  "programs": {
+    "lockdown": {
+      "name": "락다운",
+      "desc": "매트릭스 피해를 입히면 링크 잠금을 유발합니다."
+    },
+    "overclock": {
+      "name": "오버클럭",
+      "desc": "매트릭스 행동에 주사위 2개 추가. 그 중 하나는 와일드 다이스로 사용."
+    },
+    "stealth": {
+      "name": "은신",
+      "desc": "은신 행동 수행 시 엣지 1점을 얻습니다(즉시 사용하거나 소멸됨). 이 프로그램은 슬리즈 속성과 연결됩니다."
+    },
+    "trace": {
+      "name": "추적",
+      "desc": "아이콘 추적 시 엣지 1점을 얻습니다(즉시 사용하거나 소멸됨). 이 프로그램은 슬리즈 속성과 연결됩니다."
+    }
+  }
+}
