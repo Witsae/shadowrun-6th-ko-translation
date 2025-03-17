@@ -9,6 +9,21 @@ export class SR6KoreanTranslation {
     static initialize() {
         console.log('Shadowrun 6th Edition - Korean Translation | Initializing Module');
         
+        // 번역 파일 로드
+        fetch('modules/shadowrun-6th-ko-translation/lang/ko.json')
+            .then(response => response.json())
+            .then(translations => {
+                // 기존 번역에 병합
+                game.i18n.translations = foundry.utils.mergeObject(game.i18n.translations, translations);
+                console.log('Shadowrun 6th Edition - Korean Translation | Translations loaded and merged');
+            })
+            .catch(error => {
+                console.error('Shadowrun 6th Edition - Korean Translation | Error loading translations:', error);
+            });
+        
+        // 언어 설정
+        game.i18n.lang = "ko";
+        
         // Foundry VTT 12 버전에서는 game.i18n.lang을 사용하여 현재 언어 확인
         if (game.i18n.lang === "ko") {
             console.log('Shadowrun 6th Edition - Korean Translation | Korean language detected');
