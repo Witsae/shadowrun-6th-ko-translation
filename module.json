@@ -37,7 +37,7 @@
         ]
     },
     "url": "https://github.com/Witsae/shadowrun-6th-ko-translation",
-    "manifest": "https://raw.githubusercontent.com/Witsae/shadowrun-6th-ko-translation/main/module.json",
+    "manifest": "https://raw.githubusercontent.com/Witsae/shadowrun-6th-ko-translation/master/module.json",
     "download": "https://github.com/Witsae/shadowrun-6th-ko-translation/archive/v0.0.1.zip",
     "license": "LICENSE.txt"
 }
