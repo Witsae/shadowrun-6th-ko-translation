@@ -18,12 +18,7 @@ export class SR6KoreanTranslation {
     static ready() {
         console.log('Shadowrun 6th Edition - Korean Translation | Module Ready');
         
-        // 시스템이 sr6인지 확인
-        if (game.system.id !== 'sr6') {
-            ui.notifications.warn('섀도러런 6판 한국어 번역 모듈은 Shadowrun 6th Edition 시스템에서만 작동합니다.');
-            return;
-        }
-        
+        // 시스템 ID 체크 없이 무조건 번역 적용
         console.log('Shadowrun 6th Edition - Korean Translation | Translation loaded');
     }
 }
