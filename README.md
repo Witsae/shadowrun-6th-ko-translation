@@ -13,7 +13,7 @@ Foundry VTT의 섀도우런 6판 시스템을 위한 한국어 번역 모듈입�
 1. Foundry VTT에서 모듈 설치 탭으로 이동
 2. "Manifest URL" 입력란에 다음 URL을 붙여넣기:
    ```
-   https://github.com/Witsae/shadowrun-6th-ko-translation/releases/latest/download/module.json
+   https://raw.githubusercontent.com/Witsae/shadowrun-6th-ko-translation/master/module.json
    ```
 3. "Install" 버튼 클릭
 4. 월드 설정에서 모듈을 활성화
