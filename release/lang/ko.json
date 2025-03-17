@@ -1,93 +1,1672 @@
 {
-  "SR6.Attributes": "속성",
-  "SR6.Body": "체력",
-  "SR6.Agility": "민첩",
-  "SR6.Reaction": "반응",
-  "SR6.Strength": "근력",
-  "SR6.Willpower": "의지력",
-  "SR6.Logic": "논리력",
-  "SR6.Intuition": "직관력",
-  "SR6.Charisma": "매력",
-  "SR6.Edge": "에지",
-  "SR6.Magic": "마법",
-  "SR6.Resonance": "레조넌스",
-  "SR6.Essence": "에센스",
-  
-  "SR6.Skills": "기술",
-  "SR6.CombatSkills": "전투 기술",
-  "SR6.PhysicalSkills": "육체 기술",
-  "SR6.SocialSkills": "사회 기술",
-  "SR6.MagicalSkills": "마법 기술",
-  "SR6.ResonanceSkills": "레조넌스 기술",
-  "SR6.VehicleSkills": "차량 기술",
-  "SR6.TechnicalSkills": "기술적 기술",
-  
-  "SR6.Close Combat": "근접 전투",
-  "SR6.Firearms": "총기류",
-  "SR6.Athletics": "운동",
-  "SR6.Stealth": "은신",
-  "SR6.Influence": "영향력",
-  "SR6.Electronics": "전자",
-  "SR6.Engineering": "공학",
-  "SR6.Biotech": "생체공학",
-  "SR6.Conjuring": "소환",
-  "SR6.Enchanting": "마법부여",
-  "SR6.Sorcery": "주술",
-  "SR6.Tasking": "태스킹",
-  "SR6.Cracking": "크래킹",
-  
-  "SR6.Gear": "장비",
-  "SR6.Weapons": "무기",
-  "SR6.Armor": "방어구",
-  "SR6.Cyberware": "사이버웨어",
-  "SR6.Bioware": "바이오웨어",
-  "SR6.Spells": "주문",
-  "SR6.Spirits": "정령",
-  "SR6.Contacts": "컨택",
-  
-  "SR6.Combat": "전투",
-  "SR6.Initiative": "이니셔티브",
-  "SR6.Attack": "공격",
-  "SR6.Defense": "방어",
-  "SR6.Damage": "피해",
-  "SR6.Soak": "내성",
-  "SR6.Physical": "물리",
-  "SR6.Stun": "기절",
-  "SR6.Matrix": "매트릭스",
-  "SR6.Astral": "아스트랄",
-  
-  "SR6.Character": "캐릭터",
-  "SR6.Metatype": "메타타입",
-  "SR6.Human": "인간",
-  "SR6.Elf": "엘프",
-  "SR6.Dwarf": "드워프",
-  "SR6.Ork": "오크",
-  "SR6.Troll": "트롤",
-  
-  "SR6.Lifestyle": "생활방식",
-  "SR6.Street": "거리",
-  "SR6.Squatter": "무단점유자",
-  "SR6.Low": "저급",
-  "SR6.Medium": "중급",
-  "SR6.High": "고급",
-  "SR6.Luxury": "호화",
-  
-  "SR6.Nuyen": "뉴엔",
-  "SR6.Karma": "카르마",
-  "SR6.Reputation": "평판",
-  "SR6.StreetCred": "스트리트 크레드",
-  "SR6.Notoriety": "악명",
-  "SR6.PublicAwareness": "대중 인지도",
-  
-  "SR6.Save": "저장",
-  "SR6.Cancel": "취소",
-  "SR6.Delete": "삭제",
-  "SR6.Edit": "편집",
-  "SR6.Add": "추가",
-  "SR6.Remove": "제거",
-  "SR6.Roll": "굴림",
-  "SR6.Success": "성공",
-  "SR6.Failure": "실패",
-  "SR6.Glitch": "글리치",
-  "SR6.CriticalGlitch": "치명적 글리치"
-} 
+  "Shadowrun6ActorSheetNPC": "그런티",
+  "shadowrun6-eden.Shadowrun6ActorSheetNPC": "그런티 레드셔츠",
+  "SYSTEM": {
+    "Sidebar": {
+      "readme": "리드미",
+      "bugs": "버그 신고",
+      "feature": "기능 요청"
+    }
+  },
+  "ACTOR": {
+    "TypeCritter": "크리터",
+    "TypeNpc": "그런트/NPC",
+    "TypePlayer": "플레이어 캐릭터",
+    "TypeSpirit": "스피릿",
+    "TypeVehicle": "차량/드론"
+  },
+  "ITEM": {
+    "TypeAdeptpower": "어뎁트 파워",
+    "TypeCritterpower": "크리터 파워",
+    "TypeComplexform": "컴플렉스 폼",
+    "TypeContact": "컨택트",
+    "TypeEcho": "에코",
+    "TypeGear": "기어",
+    "TypeLifestyle": "라이프스타일",
+    "TypeMartialartstyle": "마샬 아트 스타일",
+    "TypeMartialarttech": "마샬 아트 테크닉",
+    "TypeMetamagic": "메타매직",
+    "TypeQuality": "퀄리티",
+    "TypeRitual": "의식",
+    "TypeSin": "SIN",
+    "TypeSkill": "언어/지식 스킬",
+    "TypeSpell": "스펠",
+    "TypeWeapon": "웨폰"
+  },
+  "QUALITY_CATEGORIES": {
+    "ADVANTAGE": "장점",
+    "DISADVANTAGE": "단점"
+  },
+  "TYPES": {
+    "Actor": {
+      "Critter": "크리터",
+      "NPC": "그런트/NPC",
+      "Player": "플레이어 캐릭터",
+      "Spirit": "스피릿",
+      "Vehicle": "차량/드론"
+    },
+    "Item": {
+      "adeptpower": "어뎁트 파워",
+      "critterpower": "크리터 파워",
+      "complexform": "컴플렉스 폼",
+      "contact": "컨택트",
+      "echo": "에코",
+      "focus": "포커스",
+      "gear": "기어",
+      "lifestyle": "라이프스타일",
+      "martialartstyle": "마샬 아트 스타일",
+      "martialarttech": "마샬 아트 테크닉",
+      "metamagic": "메타매직",
+      "quality": "퀄리티",
+      "ritual": "의식",
+      "sin": "SIN",
+      "skill": "언어/지식 스킬",
+      "software": "소프트웨어",
+      "spell": "스펠",
+      "weapon": "웨폰"
+    }
+  },
+  "attrib": {
+    "agi": "어질리티",
+    "agi_short": "AGI",
+    "bod": "바디",
+    "bod_short": "BOD",
+    "cha": "카리스마",
+    "cha_short": "CHA",
+    "dr": "방어 등급",
+    "dr_short": "DR",
+    "edg": "엣지",
+    "edg_short": "EDG",
+    "ess": "에센스",
+    "ess_short": "ESS",
+    "ini": "이니셔티브",
+    "ini_short": "INI",
+    "inia": "아스트랄 이니셔티브",
+    "inia_short": "A.INI",
+    "inim": "매트릭스 이니셔티브",
+    "inim_short": "M.INI",
+    "int": "인튜이션",
+    "int_short": "INT",
+    "log": "로직",
+    "log_short": "LOG",
+    "mag": "매직",
+    "mag_short": "MAG",
+    "rea": "리액션",
+    "rea_short": "REA",
+    "res": "레조넌스",
+    "res_short": "RES",
+    "str": "스트렝스",
+    "str_short": "STR",
+    "wil": "윌파워",
+    "wil_short": "WIL"
+  },
+  "label.skill": "스킬",
+  "section.attributes": "속성",
+  "shadowrun6": {
+    "actor": {
+      "actions": "액션",
+      "actions_major": "메이저 액션",
+      "actions_minor": "마이너 액션",
+      "editable": "편집 가능",
+      "initiative": "이니셔티브",
+      "initiative_astral": "아스트랄 이니셔티브",
+      "metatype": "메타타입",
+      "name": "이름",
+      "nav": {
+        "basics": "기본",
+        "biography": "배경",
+        "combat": "컴뱃",
+        "description": "설명",
+        "equip": "장비",
+        "input": "입력",
+        "magic": "매직",
+        "matrix": "매트릭스",
+        "overview": "개요",
+        "skills": "스킬",
+        "vehicles": "차량"
+      },
+      "skills": "스킬",
+      "spells": "스펠"
+    },
+    "adeptpower": {
+      "activation": "활성화",
+      "activation_major": "메이저 액션",
+      "activation_minor": "마이너 액션",
+      "activation_passive": "패시브",
+      "cost": "비용",
+      "haslevel": "레벨 있음",
+      "pp": "PP",
+      "perLevel": "레벨당"
+    },
+    "autosoft_types": {
+      "clearsight": "클리어사이트",
+      "electronic_warfare": "일렉트로닉 워페어",
+      "evasion": "이베이전",
+      "maneuver": "매뉴버",
+      "stealth": "스텔스",
+      "targeting": "타겟팅"
+    },
+    "critterpower": {
+      "actiontitle": "액션",
+      "action": {
+        "auto": "오토",
+        "major": "메이저 액션",
+        "minor": "마이너 액션"
+      }
+    },
+    "attack_rating": {
+      "astral": "아스트랄 공격 등급",
+      "matrix": "매트릭스 공격 등급",
+      "physical": "피지컬 공격 등급",
+      "social": "소셜 공격 등급",
+      "vehicle": "차량 공격 등급"
+    },
+    "combat": {
+      "togglePhysical": "피지컬 이니셔티브 사용",
+      "toggleMatrix": "매트릭스 이니셔티브 사용",
+      "toggleAstral": "아스트랄 이니셔티브 사용"
+    },
+    "complexform": {
+      "duration": "지속 시간",
+      "fading": "페이드 값",
+      "oppAttr1": "대항 속성 1",
+      "oppAttr2": "대항 속성 2",
+      "skill": "스킬",
+      "threshold": "임계값"
+    },
+    "contact": {
+      "rating_short": "등급",
+      "rating": "등급",
+      "loyalty": "충성도",
+      "loyalty_short": "충성",
+      "favors": "호의",
+      "favors_short": "호의",
+      "type": "타입"
+    },
+    "defense": {
+      "astral": "아스트랄 컴뱃",
+      "drain": "드레인 저항",
+      "fading": "페이딩 저항",
+      "damage_astral": "아스트랄 데미지 저항",
+      "damage_physical": "피지컬 데미지 저항",
+      "physical": "공격",
+      "spells_direct": "다이렉트 스펠",
+      "spells_indirect": "인다이렉트 스펠",
+      "spells_other": "기타 스펠",
+      "toxin": "톡신 저항"
+    },
+    "defense_rating": {
+      "label": "방어 등급",
+      "astral": "아스트랄 방어 등급",
+      "matrix": "매트릭스 방어 등급",
+      "physical": "피지컬 방어 등급",
+      "social": "소셜 방어 등급",
+      "vehicle": "차량 방어 등급"
+    },
+    "derived": {
+      "composure": "침착",
+      "defense_rating": "방어 등급",
+      "judge_intentions": "의도 판단",
+      "lift_carry": "들기/옮기기",
+      "memory": "기억",
+      "matrix_perception": "매트릭스 퍼셉션",
+      "heal": {
+        "physical": "피지컬 치유",
+        "stun": "멘탈 치유"
+      }
+    },
+    "edge_action": {
+      "anticipation": "앤티시페이션",
+      "big_speech": "빅 스피치",
+      "bring_the_drama": "브링 더 드라마",
+      "called_shot_disarm": "콜드 샷 - 디스암",
+      "called_shot_vitals": "콜드 샷 - 바이탈",
+      "fire_from_cover": "파이어 프롬 커버",
+      "knockout_blow": "녹아웃 블로우",
+      "shank": "샹크"
+    },
+    "edge_boost": {
+      "add_edge_pool": "엣지를 다이스 풀에 추가",
+      "buy_auto_hit": "자동 히트 하나 구매",
+      "count_2_glitch": "타겟의 2를 글리치로 계산",
+      "create_special": "특수 효과 생성",
+      "edge_action": "엣지 액션 - (1-5)",
+      "give_ally_1_edge": "동료에게 엣지 1 주기",
+      "heal_1_physic": "피지컬 데미지 1 포인트 치유",
+      "heal_1_stun": "스턴 데미지 한 칸 치유",
+      "negate_1_edge": "적의 엣지 1 무효화",
+      "plus_1_roll": "단일 다이스에 +1",
+      "plus_3_ini": "이니셔티브 스코어에 3 추가",
+      "reroll_failed": "실패한 다이스 모두 리롤",
+      "reroll_one": "다이스 하나 리롤"
+    },
+    "gear": {
+      "subtype": {
+        "ACCESSORY": "액세서리",
+        "AMMUNITION": "탄약",
+        "ARMOR_BODY": "아머",
+        "ARMOR_SOCIAL": "아머드 클로딩",
+        "ARMOR_CLOTHES": "일반 의복",
+        "ARMOR_HELMET": "헬멧",
+        "ARMOR_SHIELD": "쉴드",
+        "ASSAULT_CANNON": "어설트 캐논",
+        "ATVS": "ATV",
+        "AUDIO": "오디오 디바이스",
+        "AUDIO_ENHANCEMENT": "오디오 인핸스먼트",
+        "BIKES": "바이크",
+        "BIOTECH": "바이오테크",
+        "BIOWARE_COSMETICS": "코스메틱 바이오웨어",
+        "BIOWARE_CULTURED": "컬처드 바이오웨어",
+        "BIOWARE_STANDARD": "노멀 바이오웨어",
+        "BIOWARE_IMPLANT_WEAPON": "바이오임플란트 웨폰",
+        "BLADES": "블레이드",
+        "BOATS": "보트",
+        "BOWS": "보우",
+        "BREAKING": "브레이킹",
+        "BTL": "BTL",
+        "CANNONS_LAUNCHERS": "캐논 & 런처",
+        "CARS": "카",
+        "CLOSE_COMBAT": "클로즈 컴뱃",
+        "CLUBS": "클럽",
+        "COMMLINK": "콤링크",
+        "COMMUNICATION": "커뮤니케이션 및 재밍",
+        "CROSSBOWS": "크로스보우",
+        "CYBER_BODYWARE": "사이버 바디웨어",
+        "CYBER_COSMETICS": "코스메틱 사이버웨어",
+        "CYBER_EARWARE": "이어웨어",
+        "CYBER_EYEWARE": "아이웨어",
+        "CYBER_HEADWARE": "헤드웨어",
+        "CYBER_IMPLANT_WEAPON": "사이버 임플란트 웨폰",
+        "CYBER_LIMB_ACCESSORY": "사이버림 액세서리",
+        "CYBER_LIMB_ENHANCEMENT": "사이버림 인핸스먼트",
+        "CYBER_LIMBS": "사이버림",
+        "CYBERDECK": "사이버덱",
+        "CYBERJACK": "사이버잭",
+        "DRUGS": "드럭",
+        "ELECTRONIC_ACCESSORIES": "일렉트로닉 액세서리",
+        "EXPLOSIVES": "익스플로시브",
+        "FIREARMS": "파이어암",
+        "FIREARMS_ACCESSORY": "웨폰 액세서리",
+        "FIXED_WING": "픽스드 윙",
+        "FOCI_ENCHANTING": "인챈팅 포커스",
+        "FOCI_METAMAGIC": "메타매직 포커스",
+        "FOCI_POWER": "파워 포커스",
+        "FOCI_QI": "치 포커스",
+        "FOCI_SPELL": "스펠 포커스",
+        "FOCI_SPIRIT": "스피릿 포커스",
+        "FOCI_WEAPON": "웨폰 포커스",
+        "GENOM_CHANGES": "게놈 체인지",
+        "EXOTIC_METAGENETICS": "엑조틱 메타제네틱스",
+        "MICRO_ENVIRONADAPT": "마이크로 환경 적응",
+        "COMPLEMENTAL_GENETICS": "컴플리멘탈 제네틱스",
+        "GRAPPLE_GUN": "그래플 건",
+        "GRAV": "그래비테이셔널 드라이브 차량",
+        "GRENADES": "그레네이드",
+        "GRENADES_MINI": "미니 그레네이드",
+        "HOLDOUTS": "홀드아웃",
+        "HOVERCRAFT": "호버크래프트",
+        "ID_CREDIT": "ID와 크레드스틱",
+        "IMAGING": "이미징",
+        "INDUSTRIAL_CHEMICALS": "인더스트리얼 케미컬",
+        "INSTRUMENT": "인스트루먼트",
+        "INSTRUMENT_ACCESSORY": "인스트루먼트 액세서리",
+        "LARGE_DRONES": "라지 드론",
+        "LAUNCHERS": "런처",
+        "LAV": "저고도 차량 (벡터스러스트)",
+        "LTAV": "경량 항공 차량",
+        "LIVING_PERSONA": "리빙 페르소나",
+        "MACHINE_GUNS": "머신 건",
+        "MACHINE_PISTOLS": "머신 피스톨",
+        "MAGICAL_FORMULA": "매지컬 포뮬라",
+        "MAGIC_SUPPLIES": "매직 서플라이",
+        "MICRODRONES": "마이크로 드론",
+        "MINIDRONES": "미니 드론",
+        "MEDIUM_DRONES": "미디엄 드론",
+        "PREPARATION": "프리퍼레이션",
+        "PREPARATION_EXTENDED": "프리퍼레이션 (익스텐디드 포텐시)",
+        "MISSILES": "미사일",
+        "MODIFICATION": "모디피케이션",
+        "MOD_LAYOUT": "레이아웃 모드",
+        "MOD_CORE": "코어 모드",
+        "MOD_TIRES": "타이어",
+        "MOD_HANDLING": "핸들링 모드",
+        "MOD_TRAILER": "트레일러와 사이드카",
+        "MOD_INTERIOR": "시팅과 카고 모드",
+        "MOD_CARGO": "CF 모드",
+        "MOD_FORM": "폼",
+        "MOD_ARMOR": "파운데이션",
+        "MOD_ELEMENTS": "엘리먼트",
+        "MOD_ACC": "액셀러레이션 모드",
+        "MOD_EFFICIENCY": "이피션시 모드",
+        "MOD_SPEED": "스피드 모드",
+        "MOD_COAT": "일렉트로닉 스킨 코팅",
+        "MOD_MISC": "기타 일렉트로닉 모드",
+        "MOD_PILOT": "파일럿 모드",
+        "MOD_MOUNT": "웨폰 마운트",
+        "MOD_RACK": "드론 랙",
+        "MOD_OTHERS": "기타 하드포인트 모드",
+        "MOD_PROPULSION": "세컨더리 프로펄전 시스템",
+        "NANOWARE_HARD": "하드 나노웨어 시스템",
+        "NANOWARE_SOFT": "소프트 나노웨어 시스템",
+        "NANO_CYBERWARE": "나노 사이버웨어",
+        "NANOTECH_EQUIPMENT": "나노테크 이큅먼트",
+        "OPTICAL": "옵티컬",
+        "OTHER_PROGRAMS": "기타 프로그램",
+        "OTHER_CLOSE": "기타 밀리 웨폰",
+        "OTHER_SPECIAL": "스페셜 웨폰",
+        "PISTOLS_HEAVY": "헤비 피스톨",
+        "PISTOLS_LIGHT": "라이트 피스톨",
+        "PROJECTILES": "프로젝타일",
+        "RFID": "RFID",
+        "#RIFLES": "라이플",
+        "RIFLE_ASSAULT": "어설트 라이플",
+        "RIFLE_HUNTING": "헌팅 라이플",
+        "RIFLE_SNIPER": "스나이퍼 라이플",
+        "RIGGER_CONSOLE": "리거 콘솔",
+        "ROCKETS": "로켓",
+        "ROTORCRAFT": "로터크래프트",
+        "SECURITY": "시큐리티",
+        "SENSOR": "센서",
+        "SENSOR_HOUSING": "센서 하우징",
+        "SHOTGUNS": "샷건",
+        "SKILLSOFT": "스킬소프트",
+        "SLAP_PATCHES": "슬랩 패치",
+        "SMALL_DRONES": "스몰 드론",
+        "SNIPER_RIFLES": "스나이퍼 라이플",
+        "SOFTWARE": "소프트웨어",
+        "SPACECRAFT": "스페이스크래프트",
+        "SPECIAL_WEAPONS": "스페셜 웨폰",
+        "SUBMACHINE_GUNS": "서브머신 건",
+        "SUBMARINES": "서브마린",
+        "SURVIVAL_GEAR": "서바이벌",
+        "SYMBIONTS": "심비온트",
+        "TAC_NET": "택티컬 네트워크",
+        "TASERS": "테이저",
+        "THROWERS": "스로워",
+        "THROWING": "스로잉 웨폰",
+        "TRANSGENETICS": "트랜스제네틱스",
+        "TACNET_PROGRAM": "택넷 프로그램",
+        "TOOLS": "툴",
+        "PLACEHOLDERS": "스탠다드 굿즈",
+        "TOXINS": "톡신",
+        "TRUCKS": "픽업 트럭",
+        "TRACKED": "트랙드 차량",
+        "SPECIAL_VEHICLES": "스페셜 차량",
+        "UNARMED": "언암드",
+        "VANS": "밴과 카고 트럭",
+        "VEHICLE_ACCESSORY": "차량 액세서리",
+        "VISION_ENHANCEMENT": "비전 인핸스먼트",
+        "VTOL": "VTOL/VSTOL",
+        "WALKER": "워커",
+        "WEAPON_SECURITY": "웨폰 시큐리티 옵션",
+        "WHIPS": "휩",
+        "LMG": "라이트 머신 건",
+        "MMG": "미디엄 머신 건",
+        "HMG": "헤비 머신 건",
+        "HACKING_PROGRAM": "해킹 프로그램",
+        "BASIC_PROGRAM": "베이직 프로그램",
+        "RIGGER_PROGRAM": "리거 프로그램",
+        "AUTOSOFT": "오토소프트",
+        "DATASOFT": "데이터소프트",
+        "MAPSOFT": "맵소프트",
+        "SHOPSOFT": "샵소프트",
+        "TALENTSOFT": "탤런트소프트",
+        "TEACHSOFT": "티치소프트",
+        "GROUND": "그라운드 드론",
+        "ANTHRO": "안트로포모프 드론",
+        "AIR": "에어 드론",
+        "AQUATIC": "아쿠아틱 드론",
+        "AMMO_TASER": "테이저",
+        "AMMO_LIGHT": "홀드아웃/라이트 피스톨/머신 피스톨",
+        "AMMO_HEAVY": "헤비 피스톨/서브 머신건",
+        "AMMO_RIFLES": "라이플",
+        "AMMO_DARTS": "인젝션 다트",
+        "AMMO_CANNONS": "어설트 캐논",
+        "AMMO_DMSO": "DMSO 젤팩",
+        "AMMO_MACHINE_GUN": "머신 건",
+        "AMMO_INJECTION_BOLT": "인젝션 볼트",
+        "AMMO_BOLT": "볼트"
+      }
+    },
+    "initiative": {
+      "astral": "아스트랄",
+      "physical": "피지컬",
+      "matrix": "매트릭스"
+    },
+    "item": {
+      "accessories": "액세서리",
+      "strWeapon": "스트렝스 사용",
+      "ammunition": "탄약",
+      "attackvalues": "공격 등급",
+      "availability": "입수 난이도",
+      "capacity": "용량",
+      "category": "카테고리",
+      "damage": "데미지",
+      "defencerating": "방어 등급",
+      "description": "설명",
+      "essence": "에센스",
+      "feature": "특성",
+      "firemode": {
+        "SS": "싱글 샷",
+        "SA": "세미 오토매틱",
+        "BF": "버스트 파이어",
+        "FA": "풀 오토"
+      },
+      "mastyle": {
+        "category": {
+          "grappling": "그래플링",
+          "mobility": "모빌리티",
+          "ranged": "레인지드",
+          "striking": "스트라이킹",
+          "weapon": "웨폰"
+        }
+      },
+      "mode": "모드",
+      "mode_ss": "SS",
+      "mode_sa": "SA",
+      "mode_bf": "BF",
+      "mode_fa": "FA",
+      "mode_fa_1m": "1m 반경",
+      "mode_fa_2m": "2m 반경",
+      "mode_fa_3m": "3m 반경",
+      "mode_fa_4m": "4m 반경",
+      "mode_fa_5m": "5m 반경",
+      "mode_fa_6m": "6m 반경",
+      "natural": "내추럴 아머",
+      "physical_damage": "P",
+      "physical_special_damage": "S",
+      "price": "가격",
+      "skill": "스킬",
+      "skillspec": "스페셜라이제이션",
+      "social": "소셜",
+      "stun_damage": "S",
+      "subtype": "서브타입",
+      "type": "타입",
+      "vehicle": {
+        "armor.long": "아머",
+        "armor.short": "A",
+        "rigRating.long": "컨트롤 리그",
+        "sensor.long": "센서",
+        "sensor.short": "S"
+      }
+    },
+    "itemtype": {
+      "ACCESSORY": "액세서리",
+      "AMMUNITION": "탄약",
+      "ARMOR": "아머",
+      "ARMOR_ADDITION": "아머 추가",
+      "BIOLOGY": "바이올로지",
+      "BIOWARE": "바이오웨어",
+      "CHEMICALS": "케미컬",
+      "CYBERWARE": "사이버웨어",
+      "DRONES": "드론",
+      "ELECTRONICS": "일렉트로닉스",
+      "GENETICS": "진웨어",
+      "MAGICAL": "매지컬",
+      "NANOWARE": "나노웨어",
+      "SOFTWARE": "소프트웨어",
+      "SURVIVAL": "서바이벌 기어",
+      "TOOLS": "툴",
+      "VEHICLES": "차량",
+      "WEAPON_CLOSE_COMBAT": "웨폰, 클로즈 컴뱃",
+      "WEAPON_FIREARMS": "웨폰, 파이어암",
+      "WEAPON_RANGED": "웨폰, 프로젝타일",
+      "WEAPON_SPECIAL": "웨폰, 스페셜"
+    },
+    "label": {
+      "accessories": "액세서리",
+      "adepts": "어뎁트",
+      "action": "액션",
+      "actionduration": {
+        "minor.short": "마이너",
+        "major.short": "메이저"
+      },
+      "attack_rating": "공격 등급",
+      "attack_rating_short": "AR",
+      "attack_rating_using_vehicle": "공격 등급 (차량을 웨폰으로 사용)",
+      "attribute": "속성",
+      "details": "세부사항",
+      "trait": "특성",
+      "trait_pool": "특성 / 풀",
+      "base": "기본",
+      "belongs_to": "소속",
+      "column": {
+        "action": "액션",
+        "count": "#",
+        "name": "이름",
+        "nameAnimate": "이름",
+        "rating": "등급"
+      },
+      "attack.short": "A",
+      "attack.long": "공격",
+      "sleaze.short": "S",
+      "sleaze.long": "슬리즈",
+      "dataproc.short": "D",
+      "dataproc.long": "데이터 프로세싱",
+      "firewall.short": "F",
+      "firewall.long": "파이어월",
+      "devicerating.short": "DR",
+      "devicerating.long": "디바이스 등급",
+      "d6": "D6",
+      "damage": "데미지",
+      "damage_short": "데미지",
+      "defense": "방어",
+      "defense_against": "대항 방어",
+      "defense_rating": "방어 등급",
+      "delete": "삭제",
+      "device_mode": "디바이스 모드",
+      "devRating": "디바이스 등급",
+      "dual_hand": "듀얼 핸드",
+      "dice": "다이스",
+      "edit": "편집",
+      "expertise": "전문성",
+      "extended_test": "익스텐디드 테스트",
+      "faster": "가속",
+      "features": "특성",
+      "firemode_current": "현재 파이어모드",
+      "firemodes": "파이어모드",
+      "force": "포스",
+      "gender": "성별",
+      "legality.illegal.short": "I",
+      "legality.illegal.long": "불법",
+      "legality.legal.short": "L",
+      "legality.legal.long": "합법",
+      "level": "레벨 있음",
+      "mages": "메이지",
+      "matrixMonitor": "매트릭스 모니터",
+      "max": "최대",
+      "mode_of_operation": "작동 모드",
+      "modifications": "모디피케이션",
+      "modifier": "조정",
+      "name": "이름",
+      "none": "-",
+      "not_present": "없음",
+      "offroad": "오프로드",
+      "onroad": "온로드",
+      "points": "포인트",
+      "pool": "풀",
+      "poolmod": "풀 수정치",
+      "programs.short": "P",
+      "progSlots": "프로그램 슬롯",
+      "rating": "등급",
+      "rating1": "등급 1",
+      "rating2": "등급 2",
+      "rating3": "등급 3",
+      "slower": "감속",
+      "soaked": "{soaked}/{threshold} 데미지 흡수",
+      "specialization": "스페셜라이제이션",
+      "speed_detail": "당신은 {speed} km/h ({speedPerTurn} 미터/턴)로 이동 중입니다. 체크 수정치는 {modifier}입니다.",
+      "threshold": "임계값",
+      "type": "타입",
+      "value": "값",
+      "wilddie": "와일드 다이"
+    },
+    "lifestyle": {
+      "cost": "비용",
+      "paid": "지불됨",
+      "type": "타입",
+      "sin": "연결된 SIN",
+      "street": "스트리트",
+      "squatter": "스쿼터",
+      "low": "로우",
+      "middle": "미들",
+      "high": "하이",
+      "luxury": "럭셔리"
+    },
+    "matrix": {
+      "accessLevel": {
+        "outsider": "아웃사이더",
+        "user": "유저",
+        "admin": "어드민"
+      }
+    },
+    "matrixaction": {
+      "backdoor_entry": {
+        "name": "백도어 엔트리",
+        "hint": "호스트나 디바이스에 몰래 어드민 액세스를 얻습니다. 먼저 프로브 액션을 성공하고, 그 넷 히트를 이 다이스 풀에 보너스로 추가하세요."
+      },
+      "brute_force": {
+        "name": "브루트 포스",
+        "hint": "타겟을 스팸으로 빠르게 액세스하려고 시도합니다. 아웃사이더에서 어드민으로 바로 전환하려면 적이 다이스 2개 보너스와 방어 등급 +4를 얻습니다 - 어떤 경우든 디바이스는 경고 상태가 됩니다."
+      },
+      "calibration": {
+        "name": "캘리브레이션",
+        "hint": "당신과 팀원(당신의 PAN과 AR 피드를 공유 중인)의 매트릭스 이니셔티브에 히트 2개당 1을 추가합니다. 페르소나의 총 증가량은 데이터 프로세싱을 넘을 수 없습니다."
+      },
+      "change_icon": {
+        "name": "체인지 아이콘",
+        "hint": "아이콘을 선택해 다른 것으로 교체합니다. 누군가 추적하려 하면 막을 수 없습니다."
+      },
+      "check_os": {
+        "name": "체크 OS",
+        "hint": "당신의 오버워치 스코어를 확인합니다. 아이러니하게도 이 액션은 OS를 증가시킵니다."
+      },
+      "control_device": {
+        "name": "컨트롤 디바이스",
+        "hint": "디바이스를 소유자인 것처럼 제어합니다. 자발적으로 떠나거나, 셧다운하거나, 다른 누군가 당신을 밀어낼 때까지 유지됩니다."
+      },
+      "crack_file": {
+        "name": "크랙 파일",
+        "hint": "암호화된 파일을 읽을 수 있게 만듭니다."
+      },
+      "crash_program": {
+        "name": "크래시 프로그램",
+        "hint": "매트릭스 퍼셉션으로 상대 디바이스의 실행 중인 프로그램을 확인한 후, 이 액션으로 셧다운합니다."
+      },
+      "data_spike": {
+        "name": "데이터 스파이크",
+        "hint": "디바이스나 페르소나에 매트릭스 데미지를 주는 표준 공격입니다."
+      },
+      "disarm_data_bomb": {
+        "name": "디스암 데이터 봄",
+        "hint": "매트릭스 퍼셉션으로 탐지한 데이터 봄을 해제합니다. 넷 히트를 얻지 못하면 데이터 봄이 폭발합니다."
+      },
+      "device_lock": {
+        "name": "디바이스 락",
+        "hint": "디바이스 소유자가 매트릭스 연결을 끊지 못하게 넷 히트 컴뱃 라운드 동안 막습니다. 마이너 액션으로 한 번 연장 가능."
+      },
+      "denial_of_service": {
+        "name": "디나이얼 오브 서비스",
+        "hint": "이 와이파이 디바이스를 사용하는 모든 테스트에 넷 히트 x2 다이스 페널티를 생성합니다."
+      },
+      "delayed_command": {
+        "name": "딜레이드 커맨드",
+        "hint": "디바이스에 시간 프레임이 있는 커맨드를 보냅니다. 성공 시 디바이스는 이를 소유자로부터 온 것으로 인식합니다. 시간 프레임이 만료되면 매트릭스 연결이 끊겨도 실행됩니다. 단, 실행 전 리부트 시 삭제됩니다."
+      },
+      "edit_file": {
+        "name": "에딧 파일",
+        "hint": "파일을 추가, 편집, 복사, 삭제합니다. 컴뱃 중 추가나 변경은 디테일마다 액션이 필요합니다. 암호화된 파일은 복사 불가."
+      },
+      "encrypt_file": {
+        "name": "인크립트 파일",
+        "hint": "파일을 디크립트 없이는 읽을 수 없게 만듭니다. 인크립션 등급은 이 롤의 히트와 같습니다."
+      },
+      "enter_host": {
+        "name": "엔터/엑시트 호스트",
+        "hint": "호스트에 들어가거나 나옵니다."
+      },
+      "erase_matrix_signature": {
+        "name": "이레이스 매트릭스 사인",
+        "hint": "레조넌스 등급이 있다면, 테크노맨서나 스프라이트가 남긴 매트릭스 사인을 이 액션으로 제거합니다."
+      },
+      "format_device": {
+        "name": "포맷 디바이스",
+        "hint": "디바이스의 부트 섹터를 당신의 코드로 교체해 리부트 시 시작되지 않게 만듭니다."
+      },
+      "full_matrix_defense": {
+        "name": "풀 매트릭스 디펜스",
+        "hint": "매트릭스 관련 모든 방어 테스트에 파이어월을 추가합니다."
+      },
+      "garbage_in_out": {
+        "name": "가비지 인/가비지 아웃",
+        "hint": "디바이스의 입력과 출력 신호를 엉망으로 만듭니다. 예: 소유자가 프로그램을 시작하려 하면 마지막 사진이 삭제됨."
+      },
+      "hash_check": {
+        "name": "해시 체크",
+        "hint": "호스트나 디바이스에서 특정 콘텐츠가 있는 암호화된 파일을 검색합니다. 해시 값이 있으면 성공 확률이 크게 증가."
+      },
+      "hide": {
+        "name": "하이드",
+        "hint": "매트릭스에서 타겟이 당신을 보지 못하게 시도합니다. 아이콘이 당신 네트워크의 디바이스에 유저나 어드민 액세스가 있으면 작동하지 않음."
+      },
+      "jack_out": {
+        "name": "잭 아웃",
+        "hint": "디바이스를 리부트해 매트릭스에서 연결을 끊습니다. 링크 락 상태면 상대가 반대 롤을 합니다. AR로 전환하지 않으면 덤프쇼크 데미지를 받음."
+      },
+      "jam_signals": {
+        "name": "잼 시그널",
+        "hint": "이 디바이스를 다른 액션에 사용하지 않는 동안, 100미터 범위 내 노이즈 등급을 히트만큼 증가시킵니다."
+      },
+      "jump_rigged": {
+        "name": "점프 인투 리그드 디바이스",
+        "hint": "차량이나 드론에 리거 어댑션이 필요하고, 당신은 컨트롤 리그가 필요합니다. 다른 사람이 점프 인 상태면 불가. 소유권과 액세스 레벨도 영향을 미침."
+      },
+      "known_exploit": {
+        "name": "논 익스플로잇 백도어 엔트리",
+        "hint": "알려진 익스플로잇을 사용해 바로 어드민 액세스를 시도합니다. 잘 패치된 호스트나 디바이스에서는 성공 확률 감소. 프로브와 백도어 엔트리를 하나로 합침. 엣지를 얻거나 사용할 수 없으며, 상대는 무료 엣지 1을 얻음."
+      },
+      "masquerade": {
+        "name": "마스커레이드",
+        "hint": "넷 히트 분 동안 매트릭스에서 다른 사람인 척할 수 있습니다. 매트릭스를 속이기는 어렵고, 디바이스 소유권이나 뱅킹에는 작동하지 않음."
+      },
+      "matrix_perception": {
+        "name": "매트릭스 퍼셉션",
+        "hint": "사일런트 러닝 아이콘을 찾거나, 타겟의 아이콘, 디바이스 등급, 실행 중인 디바이스, 프로그램 등 특정 정보를 수집합니다."
+      },
+      "matrix_search": {
+        "name": "매트릭스 서치",
+        "hint": "공개 매트릭스에서 주제에 대한 정보를 스캔합니다."
+      },
+      "metahuman_middle": {
+        "name": "메타휴먼 인 더 미들",
+        "hint": "넷 히트 분 동안 모든 매트릭스 커뮤니케이션과 액션을 당신의 디바이스를 통해 라우팅합니다."
+      },
+      "modify_icon": {
+        "name": "모디파이 아이콘",
+        "hint": "어드민 액세스가 있는 아이콘을 대표하지 않는 것으로 수정합니다. 예: 총을 꽃으로 보이게."
+      },
+      "probe": {
+        "name": "프로브",
+        "hint": "익스플로잇을 찾아 이후 백도어 엔트리 액션으로 액세스를 얻습니다. 시간은 걸리지만 브루트 포스와 달리 타겟을 경고하지 않음."
+      },
+      "pop_up": {
+        "name": "팝업",
+        "hint": "상대에게 ARO 창으로 스팸을 보내 넷 히트 라운드 동안 엣지를 사용할 수 없게 만듭니다."
+      },
+      "reboot_device": {
+        "name": "리부트 디바이스",
+        "hint": "디바이스를 강제로 리부트해 매트릭스에서 끊습니다. 다음 컴뱃 라운드 끝에 다시 온라인."
+      },
+      "reconfigure": {
+        "name": "리컨피규어 매트릭스 애트리뷰트",
+        "hint": "매트릭스 페르소나의 0 이상인 두 기본 등급을 소스(콤링크, 사이버잭 등)와 관계없이 전환합니다."
+      },
+      "send_message": {
+        "name": "샌드 메시지",
+        "hint": "다른 사람에게 오디오나 텍스트를 전달하거나 라이브 피드를 생성합니다."
+      },
+      "set_data_bomb": {
+        "name": "셋 데이터 봄",
+        "hint": "부주의한 해커를 폭파시키기 위해 데이터 봄을 부착합니다. 등급은 최대 넷 히트까지 설정 가능. 파일 삭제 여부 선택."
+      },
+      "snoop": {
+        "name": "스눕",
+        "hint": "타겟과 매트릭스 간 교환되는 데이터 트래픽을 손에 넣습니다."
+      },
+      "spoof_command": {
+        "name": "스푸프 커맨드",
+        "hint": "정당한 소유자인 척 디바이스에 커맨드를 보냅니다. 디바이스는 다음 가능한 메이저 액션으로 실행 시도."
+      },
+      "squelch": {
+        "name": "스퀄치",
+        "hint": "타겟이 넷 히트 라운드 동안 메시지를 보내거나 호출하지 못하게 막습니다."
+      },
+      "subvert_infrastructure": {
+        "name": "서브버트 인프라스트럭처",
+        "hint": "한 호스트의 유사한 단순 디바이스 그룹을 원하는 대로 조작합니다. 예: 가로등 끄기, 보안 카메라 좌회전."
+      },
+      "switch_ifmode": {
+        "name": "스위치 인터페이스 모드",
+        "hint": "인터페이스의 AR과 VR 모드를 토글합니다."
+      },
+      "tarpit": {
+        "name": "타핏",
+        "hint": "데미지를 주고 데이터 프로세싱 값을 줄여 타겟을 느리게 만듭니다."
+      },
+      "threat_analysis": {
+        "name": "쓰렛 애널리시스",
+        "hint": "위험 요소를 표시하고 AR 피드로 팀원과 공유해 방어 롤에 성공 수를 보너스 다이스로 제공합니다. 피지컬과 매트릭스 모두 작동."
+      },
+      "trace_icon": {
+        "name": "트레이스 아이콘",
+        "hint": "디바이스나 페르소나의 물리적 위치를 추적합니다."
+      },
+      "virtual_aim": {
+        "name": "버추얼 에임",
+        "hint": "데이터 스파이크나 타핏 같은 공격 액션에 보너스 다이스 1을 제공합니다. 라운드당 한 번 활성화 가능, 공격하지 않으면 누적. 최대는 윌파워."
+      },
+      "watchdog": {
+        "name": "왓치독",
+        "hint": "넷 히트 라운드 동안 매트릭스 페르소나나 디바이스의 액션을 추적하고 예측해 개입 가능. 왓치독 활성화 시 쓰렛 애널리시스를 마이너 액션으로 실행."
+      }
+    },
+    "matrixini": {
+      "ar": "AR",
+      "vrcold": "VR 콜드-심",
+      "vrhot": "VR 핫-심"
+    },
+    "monitor": {
+      "label": "모니터",
+      "matrix": "매트릭스",
+      "physical": "피지컬",
+      "stun": "스턴",
+      "overflow": "오버플로우",
+      "dead": "데드",
+      "broken": "브로큰 다운"
+    },
+    "mortype": {
+      "adept": "어뎁트",
+      "aspectedmagician": "애스펙티드 매지션",
+      "magician": "매지션",
+      "mundane": "먼데인",
+      "mysticadept": "미스틱 어뎁트",
+      "technomancer": "테크노맨서"
+    },
+    "newitem": {
+      "adeptpower": "어뎁트 파워 이름 짓기",
+      "accessory": "반짝이는 유리 조각",
+      "ammunition": "핫 스터프 탄약",
+      "armor": "트렌디한 것",
+      "armor_addition": "코트에 업그레이드 필요",
+      "biology": "바이오해저드",
+      "bodyware": "멋진 인핸스먼트",
+      "chemicals": "좋은 물건",
+      "complexform": "얼마나 복잡한 걸 원해?",
+      "contact": "누구에게 전화할 거야? 고스트버스터즈!",
+      "critterpower": "뭐가 그렇게 특별해?",
+      "cyberware": "멋진 사이버 인핸스먼트",
+      "drones": "나의 플라잉 아이",
+      "echo": "에코오오오",
+      "electronics": "너드 토이",
+      "genetics": "모두가 블루 아이를 원해",
+      "focus": "집중할 수 있는 것",
+      "lifestyle": "카드보드 박스나 스위트?",
+      "magical": "모조 깃털",
+      "martialartstyle": "당신의 스타일은?",
+      "martialarttech": "테크닉, 어떤 테크닉?",
+      "matrix": "내 덱을 체크 아웃!",
+      "rcc": "미니언 도미네이터 X2000",
+      "metamagic": "뭐 배웠어?",
+      "nanoware": "세븐 오어 나인 리틀 머신",
+      "quality": "당신의 피트는 뭐야?",
+      "ritual": "할렐루야 노래하기",
+      "sin": "당신 누구야? 후, 후, 후, 후",
+      "skill": {
+        "knowledge": "당신의 너드 토픽은 뭐야?",
+        "language": "지버리시"
+      },
+      "spell": "아브라카다브라",
+      "software": "수상한 불법 복제품",
+      "survival": "편리한 스위스 아미 나이프",
+      "tools": "당신의 페이브 툴",
+      "vehicles": "멋진 라이드",
+      "weapon": "이름 붙인 웨폰이 훨씬 쿨해",
+      "weaponclose": "무거운 것",
+      "weaponspecial": "이상한 웨폰"
+    },
+    "npc": {
+      "subtype": {
+        "npc": "NPC",
+        "critter": "크리터",
+        "spirit": "스피릿",
+        "sprite": "스프라이트"
+      },
+      "gruntrules": "그런트 룰 사용",
+      "mortype": "매직/레조넌스"
+    },
+    "numerical": {
+      "base": "기본",
+      "baseString": "기본 값",
+      "max": "최대",
+      "mod": "조정"
+    },
+    "programtype": {
+      "basic": "베이직 프로그램",
+      "hacking": "해킹 프로그램"
+    },
+    "program": {
+      "baby_monitor": {
+        "name": "베이비 모니터",
+        "desc": "액션 없이 현재 오버워치 스코어를 알려줍니다."
+      },
+      "browse": {
+        "name": "브라우즈",
+        "desc": "매트릭스 서치 시 엣지 1을 얻습니다. 즉시 사용하지 않으면 사라짐."
+      },
+      "configurator": {
+        "name": "컨피규레이터",
+        "desc": "대체 덱 설정을 저장하고, 두 속성을 바꾸는 대신 스왑합니다."
+      },
+      "edit": {
+        "name": "에딧",
+        "desc": "에딧 파일 액션 시 엣지 1을 얻습니다. 즉시 사용하지 않으면 사라짐."
+      },
+      "encryption": {
+        "name": "인크립션",
+        "desc": "인크립트 파일 액션 시 다이스 +2"
+      },
+      "signal_scrubber": {
+        "name": "시그널 스크러버",
+        "desc": "노이즈 레벨 2 감소"
+      },
+      "toolbox": {
+        "name": "툴박스",
+        "desc": "데이터 프로세싱 +1"
+      },
+      "virtual_machine": {
+        "name": "버추얼 머신",
+        "desc": "프로그램 슬롯 2 추가; 공격 시 저항 없는 매트릭스 데미지 1 추가"
+      },
+      "armor": {
+        "name": "아머",
+        "desc": "방어 등급 +2"
+      },
+      "biofeedback": {
+        "name": "바이오피드백",
+        "desc": "매트릭스 공격으로 스턴(콜드-심) 또는 피지컬(핫-심) 데미지를 줍니다. 이 프로그램은 어택 속성과 연결."
+      },
+      "biofeedback_filter": {
+        "name": "바이오피드백 필터",
+        "desc": "디바이스 등급 또는 바디 롤로 매트릭스 데미지를 흡수."
+      },
+      "blackout": {
+        "name": "블랙아웃",
+        "desc": "바이오피드백과 비슷하지만 스턴 데미지만. 이 프로그램은 어택 속성과 연결."
+      },
+      "decryption": {
+        "name": "디크립션",
+        "desc": "크랙 파일 액션 시 다이스 +2"
+      },
+      "defuse": {
+        "name": "디퓨즈",
+        "desc": "디바이스 등급 또는 바디 롤로 데이터 봄 데미지를 흡수."
+      },
+      "exploit": {
+        "name": "익스플로잇",
+        "desc": "해킹 타겟의 방어 등급 2 감소."
+      },
+      "fork": {
+        "name": "포크",
+        "desc": "다이스 풀을 나누지 않고 단일 매트릭스 액션으로 두 타겟을 공격."
+      },
+      "lockdown": {
+        "name": "락다운",
+        "desc": "매트릭스 데미지를 줄 때 링크 락 발생."
+      },
+      "overclock": {
+        "name": "오버클럭",
+        "desc": "매트릭스 액션에 다이스 2 추가. 하나는 와일드 다이여야 함."
+      },
+      "stealth": {
+        "name": "스텔스",
+        "desc": "하이드 액션 시 엣지 1을 얻습니다. 액션 내에서 사용해야 하며, 그렇지 않으면 사라짐. 이 프로그램은 슬리즈 속성과 연결."
+      },
+      "trace": {
+        "name": "트레이스",
+        "desc": "트레이스 아이콘 액션 시 엣지 1을 얻습니다. 액션 내에서 사용해야 하며, 그렇지 않으면 사라짐. 이 프로그램은 슬리즈 속성과 연결."
+      }
+    },
+    "qualityedit": {
+      "category": "카테고리",
+      "description": "설명",
+      "explain": "해설",
+      "name": "이름",
+      "new": "신규"
+    },
+    "ritualfeatures": {
+      "anchored": "앵커드",
+      "material_link": "머티리얼 링크",
+      "minion": "미니언",
+      "spell": "스펠",
+      "spotter": "스팟터"
+    },
+    "roll": {
+      "accumulated": "누적",
+      "actionText": {
+        "attack_target_multiple": "{name}으로 여러 타겟 공격",
+        "attack_target_none": "{name}으로 타겟 공격",
+        "attack_target_one": "{name}으로 {target} 공격",
+        "cast_target_multiple": "{name}을 여러 타겟에 캐스팅",
+        "cast_target_none": "{name} 캐스팅",
+        "cast_target_one": "{name}을 {target}에 캐스팅",
+        "skill": "스킬 테스트 수행",
+        "thread": "{name} 스레딩",
+        "defense": {
+          "physical": "피지컬 공격 방어",
+          "spells_direct": "다이렉트 컴뱃 스펠 방어",
+          "spells_indirect": "인다이렉트 컴뱃 스펠 방어"
+        },
+        "soak": {
+          "drain": "{damage} 드레인 저항",
+          "fading": "{damage} 페이딩 저항",
+          "damage_phys": "{damage} 피지컬 데미지 저항",
+          "damage_stun": "{damage} 스턴 데미지 저항"
+        }
+      },
+      "apply_damage": "데미지 적용",
+      "damage_applied": "데미지 적용됨",
+      "damage_revert": "데미지 되돌리기?",
+      "ar_0": "클로즈",
+      "ar_1": "니어",
+      "ar_2": "미디엄",
+      "ar_3": "파",
+      "ar_4": "익스트림",
+      "attack": "공격",
+      "attackRating": "공격 등급",
+      "bf_type": "타입",
+      "bf": {
+        "narrow_burst": "내로우 버스트",
+        "wide_burst": "와이드 버스트"
+      },
+      "button": {
+        "defense": "방어 롤",
+        "drain": "드레인 저항",
+        "soak": "데미지 흡수"
+      },
+      "cantDodgeBullets": "거리와 타겟 방어 풀 크기에 따라 임계값 증가",
+      "configure": "롤 설정",
+      "wound-modifier": "부상 수정치 사용",
+      "sustained-spell-modifier": "서스테인드 스펠 수정치 사용",
+      "criticalglitch": "크리티컬 글리치",
+      "heal_apply": "치유",
+      "damage": "데미지: ",
+      "damage_apply": "데미지 적용",
+      "defRating": "방어 등급",
+      "edge": {
+        "add_manually_to_target": "(수동 추가) 타겟",
+        "gain_player": "{name}이 {value} 엣지를 얻음",
+        "gain_player_capped": "{name}이 {value} 엣지를 얻으려 했으나 {capped} 이상 불가",
+        "getting": "엣지 획득",
+        "no_gain": "아무도 엣지를 얻지 못함",
+        "situational": "상황별 엣지",
+        "spending": "엣지 사용"
+      },
+      "edge_perform": "실행",
+      "edgegain": "엣지 획득 (최대): ",
+      "edgegain_player": " (플레이어)",
+      "exp": "전문성",
+      "explode": "폭발",
+      "fa_area": "영역",
+      "firemode": "파이어모드",
+      "failure": "실패",
+      "failedDefense": "당신은 맞았고 이제 아플 겁니다",
+      "failedSoak": "당신은 데미지를 받습니다",
+      "glitch": "글리치",
+      "hits_bought": "구매한 히트",
+      "hits": "히트",
+      "mode": "모드",
+      "modifier": "풀 수정치",
+      "noedgegain": "엣지 획득 없음",
+      "nosuccess": "히트, 임계값: ",
+      "notarget": "타겟 선택 안 됨",
+      "pool": "풀",
+      "range": "거리",
+      "spec": "스페셜라이제이션",
+      "spell": {
+        "ampUp": {
+          "1": "데미지+1 / 드레인+2",
+          "2": "데미지+2 / 드레인+4",
+          "3": "데미지+3 / 드레인+6",
+          "4": "데미지+4 / 드레인+8",
+          "title": "앰프 업"
+        },
+        "incArea": {
+          "1": "반경 +2m / 드레인+1",
+          "2": "반경 +4m / 드레인+2",
+          "3": "반경 +6m / 드레인+3",
+          "4": "반경 +8m / 드레인+4",
+          "5": "반경 +10m / 드레인+6",
+          "6": "반경 +12m / 드레인+8",
+          "title": "영역 증가"
+        },
+        "title": "스펠 조정"
+      },
+      "subject": "채팅 메시지",
+      "success": "성공",
+      "successes": "히트",
+      "netHits": "넷 히트",
+      "successfulDefense": "당신은 성공적으로 피했습니다",
+      "successfulSoak": "당신은 데미지를 무시했습니다",
+      "missedAttack": "당신은 놓쳤습니다, 썸머!",
+      "succesfulHit": "당신이 맞췄습니다, 썸머!",
+      "target": "타겟",
+      "threshold": "임계값",
+      "weapon": "공격 정의",
+      "wilddie": "와일드 다이 사용",
+      "with": "와 함께"
+    },
+    "rollType": {
+      "bought": "히트 구매",
+      "normal": "다이스 롤"
+    },
+    "section": {
+      "adeptpowers": {
+        "add": "새 파워 추가",
+        "column.points": "PP",
+        "title": "어뎁트 파워"
+      },
+      "ammo": "탄약",
+      "ammo_add": "탄약 추가",
+      "armor": {
+        "add": "새 아머 추가",
+        "column": {
+          "action": "액션",
+          "defense": "DR",
+          "name": "이름",
+          "social": "소셜"
+        },
+        "title": "아머"
+      },
+      "armor_adds": "아머 모드",
+      "biology": "바이올로지",
+      "bodyware": {
+        "add": "새 바이오웨어 또는 사이버웨어 추가",
+        "column.capacity": "용량",
+        "column.essence": "에센스",
+        "footer.total_essence": "남은 에센스",
+        "title": "증강"
+      },
+      "chemicals": "케미컬",
+      "complexforms": {
+        "add": "새 컴플렉스 폼 추가",
+        "column.duration": "지속",
+        "column.fade": "페이드",
+        "title": "컴플렉스 폼"
+      },
+      "contacts": {
+        "add": "새 컨택트 추가",
+        "title": "컨택트"
+      },
+      "critterpowers": {
+        "add": "크리터 파워 추가",
+        "title": "파워"
+      },
+      "defense": "방어 & 저항",
+      "derived": "파생 값",
+      "drones": {
+        "add": "새 드론 추가",
+        "title": "드론"
+      },
+      "electronics": "일렉트로닉스",
+      "echo": {
+        "add": "새 에코 추가",
+        "title": "에코"
+      },
+      "initiative": "이니셔티브",
+      "martialarts": {
+        "add": "새 스타일 추가",
+        "tech_add": "새 테크닉 추가",
+        "title": "마샬 아트"
+      },
+      "focus": {
+        "add": "새 포커스 추가",
+        "column.rating": "포스",
+        "title": "포커스"
+      },
+      "gear": {
+        "add": "새 기어 추가",
+        "title": "기어"
+      },
+      "karma": {
+        "title": "카르마, 히트, 레퓨테이션",
+        "karma": "카르마",
+        "heat": "히트",
+        "reputation": "레퓨테이션",
+        "total": "총합"
+      },
+      "lifestyles": {
+        "add": "새 라이프스타일 추가",
+        "title": "라이프스타일"
+      },
+      "magical": "매지컬",
+      "matrix_base": {
+        "overwatch": "오버워치"
+      },
+      "matrix_actions": {
+        "title": "매트릭스 액션"
+      },
+      "matrix_combat": {
+        "title": "매트릭스 컴뱃"
+      },
+      "matrix_devices": {
+        "add": "새 매트릭스 디바이스 추가",
+        "add_rcc": "새 리거 커맨드 콘솔 추가",
+        "column": {
+          "action": "액션",
+          "devRating": "디바이스 등급",
+          "name": "이름"
+        },
+        "title": "매트릭스 디바이스",
+        "title_rcc": "RCC"
+      },
+      "metamagic": {
+        "add": "새 메타매직 추가",
+        "title": "메타매직"
+      },
+      "notes": {
+        "title": "노트"
+      },
+      "persona": {
+        "distribute": "분배",
+        "title": "페르소나"
+      },
+      "qualities": "퀄리티",
+      "qualities_add": "추가",
+      "rigging": {
+        "title": "리깅"
+      },
+      "rituals": {
+        "add": "새 의식 추가",
+        "column.threshold": "임계값",
+        "title": "의식"
+      },
+      "sins": {
+        "add": "새 SIN 추가",
+        "title": "SIN"
+      },
+      "skills.action": "스킬",
+      "skills.knowledge": "지식 스킬",
+      "skills.knowledge_add": "새 지식 추가",
+      "skills.language": "언어 스킬",
+      "skills.language-level": {
+        "expert": "익스퍼트",
+        "native": "네이티브",
+        "normal": "노멀",
+        "special": "스페셜리스트"
+      },
+      "skills.language_add": "새 언어 스킬 추가",
+      "software": {
+        "add": "새 소프트웨어 추가",
+        "title": "소프트웨어"
+      },
+      "spells": {
+        "add": "새 스펠 추가",
+        "column.alchemic": "알케믹",
+        "column.drain": "드레인",
+        "column.range": "레인지",
+        "column.sustained": "서스테인드",
+        "title": "스펠"
+      },
+      "sustained": {
+        "add": "새 스펠 추가",
+        "title": "서스테인드 스펠"
+      },
+      "survival": "서바이벌",
+      "vehicles": {
+        "add": "새 차량 추가",
+        "column": {
+          "handling": "핸들링",
+          "acc": "가속",
+          "spdi": "간격",
+          "tspd": "스피드",
+          "bod": "바디",
+          "arm": "아머",
+          "pil": "파일럿",
+          "sen": "센서",
+          "sea": "시트",
+          "vtype": "타입"
+        },
+        "title": "차량"
+      },
+      "vehicleskills": {
+        "brain": "일렉트로닉 브레인",
+        "operations": "오퍼레이션"
+      },
+      "weapon": {
+        "add": "새 웨폰 추가",
+        "close": "밀리 웨폰",
+        "ranged": "레인지드 웨폰",
+        "special": "스페셜 웨폰",
+        "title": "웨폰"
+      }
+    },
+    "settings": {
+      "maxEdgePerRound": {
+        "hint": "플레이어나 NPC가 턴마다 얻을 수 있는 최대 엣지를 정의합니다.",
+        "name": "턴당 최대 엣지 획득량"
+      },
+      "importToCompendium": {
+        "hint": "가져온 NPC를 액터로 추가할지 NPC 컴펜디움 항목으로 추가할지 정의합니다.",
+        "name": "컴펜디움으로 가져오기"
+      },
+      "defaultThreshold": {
+        "hint": "모든 스킬 체크에 사용되는 기본 임계값을 정의합니다.",
+        "name": "기본 임계값"
+      },
+      "hardDiceCap": {
+        "hint": "표준 플레이에서 모든 테스트의 최대 다이스는 20개입니다. 능력, 스킬, 효과, 증강의 조합으로 이 한계를 초과할 수 없습니다. 예외: 엣지로 프리-엣징하면 엣지 보너스 다이스로 20개 한계를 넘을 수 있습니다.",
+        "name": "하드 다이스 캡"
+      },
+      "bleeding": {
+        "hint": "이 룰을 사용하면 심각한 부상에서 오는 지속 데미지를 표현합니다. (SWC p.145)",
+        "name": "블리딩"
+      },
+      "hackSlashMatrix": {
+        "hint": "활성화하면 Hack & Slash 룰북의 매트릭스 액션을 캐릭터 시트에 표시합니다. (HS p.28)",
+        "name": "Hack & Slash 매트릭스 액션"
+      },
+      "armorLessensDmg": {
+        "hint": "이 룰을 사용하면 피지컬 데미지 양을 줄일 수 있습니다. 데미지 저항 후(톡신이나 상태 외), DR 8포인트마다 피지컬 데미지 한 칸을 스턴으로 전환. (SWC p.149)",
+        "name": "아머가 피지컬 데미지 감소"
+      },
+      "rollStrengthCombat": {
+        "hint": "클로즈 컴뱃 공격은 언암드 공격이나 질량과 모멘텀에 의존하는 웨폰의 경우 어질리티 대신 스트렝스를 롤할 수 있습니다. 이 경우 스트렝스 대신 어질리티를 공격 등급에 추가. 웨폰에 관련 있을 때는 양손으로 사용해야 함. (SWC p.150)",
+        "name": "클로즈 컴뱃에서 어질리티 대신 스트렝스 롤링"
+      },
+      "highStrengthAddsDamage": {
+        "hint": "스트렝스가 7 이상이면 밀리 DV가 1 증가, 10 이상이면 2 증가. 높은 스트렝스 혜택을 받지 않는 웨폰은 DV 증가 없음. (SWC p.150)",
+        "name": "높은 스트렝스가 데미지 추가"
+      },
+      "highStrengthReducesRecoil": {
+        "hint": "파이어모드 공격의 AR 페널티가 스트렝스 7 이상이면 1 감소, 10 이상이면 2 감소. 파이어암은 양손으로 제어해야 함. (SWC p.150)",
+        "name": "높은 스트렝스가 리코일 감소"
+      },
+      "cantDodgeBullets": {
+        "hint": "공격에 대한 반대 테스트는 거리와 타겟 방어 풀 크기에 따라 설정된 임계값에 대한 심플 테스트로 변경. 공격 타겟은 여전히 엣지 부스트를 사용할 수 있음. (SWC p.151)",
+        "name": "총알은 피할 수 없다"
+      }
+    },
+    "sin": {
+      "quality": "퀄리티",
+      "real_sin": "리얼 SIN",
+      "anyone": "누구나",
+      "rough_match": "대략적 매치",
+      "good_match": "좋은 매치",
+      "superficially_plausible": "표면적으로 그럴듯함",
+      "highly_plausible": "매우 그럴듯함",
+      "second_life": "세컨드 라이프"
+    },
+    "softwareedit": {
+      "description": "설명",
+      "category": "카테고리",
+      "basic": "스탠다드",
+      "hacking": "해킹"
+    },
+    "special": {
+      "astral": {
+        "astral_combat": "아스트랄 컴뱃",
+        "astral_signatures": "아스트랄 시그니처",
+        "emotional_stress": "이모셔널 스트레스",
+        "spirit_types": "스피릿 타입"
+      },
+      "athletics": {
+        "archery": "아처리",
+        "climbing": "클라이밍",
+        "flying": "플라잉",
+        "free_fall": "프리 폴",
+        "gymnastics": "짐내스틱스",
+        "sprinting": "스프린팅",
+        "swimming": "스위밍",
+        "throwing": "스로잉"
+      },
+      "biotech": {
+        "biotechnology": "바이오테크놀로지",
+        "cybertechnology": "사이버테크놀로지",
+        "first_aid": "퍼스트 에이드",
+        "medicine": "메디신"
+      },
+      "close_combat": {
+        "blades": "블레이드",
+        "clubs": "클럽",
+        "unarmed": "언암드 컴뱃"
+      },
+      "con": {
+        "acting": "액팅",
+        "disguise": "디스가이즈",
+        "impersonation": "임퍼소네이션",
+        "performance": "퍼포먼스"
+      },
+      "conjuring": {
+        "banishing": "배니싱",
+        "summoning": "서머닝"
+      },
+      "cracking": {
+        "cybercombat": "사이버컴뱃",
+        "electronic_warfare": "일렉트로닉 워페어",
+        "hacking": "해킹"
+      },
+      "electronics": {
+        "computer": "컴퓨터",
+        "hardware": "하드웨어",
+        "software": "소프트웨어",
+        "complex_forms": "컴플렉스 폼"
+      },
+      "enchanting": {
+        "alchemy": "알케미",
+        "artificing": "아티피싱",
+        "disenchanting": "디스인챈팅"
+      },
+      "engineering": {
+        "aeronautics_mechanic": "에어로노틱스 메카닉",
+        "armorer": "아머러",
+        "automotive_mechanic": "오토모티브 메카닉",
+        "demolitions": "데몰리션",
+        "gunnery": "거너리",
+        "industrial_mechanic": "인더스트리얼 메카닉",
+        "lockpicking": "락피킹",
+        "nautical_mechanic": "노티컬 메카닉"
+      },
+      "exotic_weapons": {
+        "chainsaws": "체인소",
+        "brawling": "클로즈 컴뱃",
+        "air": "컴프레스드 에어",
+        "emitter": "에너지 웨폰",
+        "laser": "레이저 웨폰",
+        "launchers": "런처",
+        "spray": "스프레이 웨폰",
+        "whips": "휩",
+        "other": "기타"
+      },
+      "firearms": {
+        "assault_cannons": "어설트 캐논",
+        "holdouts": "홀드아웃",
+        "machine_pistols": "머신 피스톨",
+        "pistols_heavy": "헤비 피스톨",
+        "pistols_light": "라이트 피스톨",
+        "rifles": "라이플",
+        "shotguns": "샷건",
+        "submachine_guns": "서브머신 건",
+        "machine_guns": "머신 건",
+        "tasers": "테이저"
+      },
+      "influence": {
+        "etiquette": "에티켓",
+        "instruction": "인스트럭션",
+        "intimidation": "인티미데이션",
+        "leadership": "리더십",
+        "negotiation": "네고시에이션"
+      },
+      "outdoors": {
+        "navigation": "내비게이션",
+        "survival": "서바이벌",
+        "tracking_desert": "환경 데저트",
+        "tracking_other": "환경 기타",
+        "tracking_urban": "환경 어반",
+        "tracking_woods": "환경 우드"
+      },
+      "perception": {
+        "aural": "오럴",
+        "perception_desert": "환경 데저트",
+        "perception_other": "환경 기타",
+        "perception_urban": "환경 어반",
+        "perception_woods": "환경 우드",
+        "scent": "센트",
+        "tactile": "택타일",
+        "taste": "테이스트",
+        "visual": "비주얼"
+      },
+      "piloting": {
+        "aircraft": "에어크래프트",
+        "ground_craft": "그라운드 크래프트",
+        "watercraft": "워터크래프트"
+      },
+      "sorcery": {
+        "counterspelling": "카운터스펠링",
+        "ritual_spellcasting": "의식 스펠캐스팅",
+        "spellcasting": "스펠캐스팅"
+      },
+      "stealth": {
+        "camouflage": "캐모플라지",
+        "disguise": "디스가이즈",
+        "palming": "팔밍",
+        "sneaking": "스니킹"
+      },
+      "tasking": {
+        "compiling": "컴파일링",
+        "decompiling": "디컴파일링",
+        "registering": "레지스터링"
+      }
+    },
+    "spell": {
+      "area": "영역",
+      "category": "카테고리",
+      "category_combat": "컴뱃",
+      "category_detection": "디텍션",
+      "category_health": "헬스",
+      "category_illusion": "일루전",
+      "category_manipulation": "매니퓰레이션",
+      "damage": "데미지",
+      "damage_physical": "피지컬",
+      "damage_physical_short": "P",
+      "damage_physical_special": "피지컬, 스페셜",
+      "damage_physical_special_short": "P, 스페셜",
+      "damage_short": "데미지",
+      "damage_stun": "스턴",
+      "damage_stun_short": "S",
+      "damage_stun_special": "스턴, 스페셜",
+      "damage_stun_special_short": "S, 스페셜",
+      "direct": "다이렉트",
+      "drain": "드레인",
+      "drain_short": "DV",
+      "duration": "지속 시간",
+      "duration_instantaneous": "인스턴태니어스",
+      "duration_instantaneous_short": "I",
+      "duration_immediate": "이미디엇",
+      "duration_immediate_short": "I",
+      "duration_limited": "리미티드",
+      "duration_permanent": "퍼머넌트",
+      "duration_permanent_short": "P",
+      "duration_short": "지속",
+      "duration_special": "스페셜",
+      "duration_special_short": "스펙",
+      "duration_sustained": "서스테인드",
+      "duration_sustained_short": "S",
+      "duration_always": "올웨이즈",
+      "duration_always_short": "A",
+      "isOpposed": "대항 여부",
+      "range": "레인지",
+      "range_line_of_sight": "라인 오브 사이트",
+      "range_line_of_sight_area": "라인 오브 사이트 (영역)",
+      "range_line_of_sight_area_short": "LOS(A)",
+      "range_line_of_sight_short": "LOS",
+      "range_self": "셀프",
+      "range_self_area": "셀프 (영역)",
+      "range_self_area_short": "S(A)",
+      "range_self_short": "셀프",
+      "range_touch": "터치",
+      "range_touch_short": "T",
+      "type": "타입",
+      "type_mana": "마나",
+      "type_mana_short": "마나",
+      "type_physical": "피지컬",
+      "type_physical_short": "피지컬",
+      "withEssence": "에센스 대항"
+    },
+    "spellfeatures": {
+      "area": "영역",
+      "direct": "다이렉트 컴뱃",
+      "indirect": "인다이렉트 컴뱃",
+      "sense_multi": "멀티-센스",
+      "sense_single": "싱글-센스"
+    },
+    "spirittype": {
+      "air": "에어",
+      "beasts": "비스트",
+      "earth": "어스",
+      "fire": "파이어",
+      "kin": "킨",
+      "plant": "플랜트",
+      "water": "워터"
+    },
+    "tradition": {
+      "attribute": "트래디션 속성"
+    },
+    "vehicle": {
+      "action_label": "핸들링 / 차량 공격 또는 방어",
+      "initiative": "차량 이니셔티브",
+      "mode_label": "모드",
+      "mode": {
+        "manual": "매뉴얼",
+        "riggedAR": "점프드 인 (AR)",
+        "riggedVR": "점프드 인 (VR)",
+        "rcc": "RCC를 통해 (할 일)",
+        "autonomous": "오토노머스"
+      },
+      "skill": {
+        "cracking": "크래킹",
+        "evasion": "이베이전",
+        "perception": "퍼셉션",
+        "piloting": "파일로팅",
+        "stealth": "스텔스"
+      },
+      "type": {
+        "groundcraft": "그라운드크래프트",
+        "watercraft": "워터크래프트",
+        "aircraft": "에어크래프트"
+      }
+    },
+    "weapon": {
+      "damage": "DV",
+      "attackRating": "공격 등급",
+      "firemodes": "모드",
+      "ammo": "탄약"
+    },
+    "ui": {
+      "notifications": {
+        "You_are_not_owner_of_the_target": "당신은 타겟의 소유자가 아닙니다.",
+        "You_can_only_choose_Wide_Burst_when_you_target_two_tokens": "와이드 버스트는 토큰 2개를 타겟으로 할 때만 선택 가능합니다.",
+        "Target_or_select_a_token_before_rolling": "롤 전에 토큰을 타겟하거나 선택하세요.",
+        "Target_a_token_before_rolling": "롤 전에 토큰을 타겟(T)하세요.",
+        "Dice_roll_evaluation_failed": "다이스 롤 평가 실패",
+        "two_targets_but_wrong_fire_mode": "타겟이 2개이므로 버스트 파이어: 와이드 버스트 또는 풀 오토 모드로만 발사 가능.",
+        "many_targets_but_not_autofire_fire_mode": "타겟이 2개 이상이므로 풀 오토 모드로만 발사 가능.",
+        "attack_with_no_AR": "공격 등급이 0인 상태(예: 거리 문제)에서 공격을 시도 중입니다.",
+        "apply_manually": "데미지를 수동으로 적용하세요.",
+        "Target_is_not_a_life_form": "타겟은 생명체가 아닙니다.",
+        "do_not_revert_damage": "피지컬 모니터로 오버플로우. 채팅 버튼으로 이 데미지를 되돌리지 마세요, 계산이 정확하지 않을 수 있음.",
+        "No_actor_or_tokens_selected": "플레이어 캐릭터를 지정하거나 토큰을 선택한 후 롤하세요.",
+        "You_are_not_owner_of_the_tokens": "당신은 선택한 토큰의 소유자가 아닙니다.",
+        "no_weapon_skill_set": "롤 전에 웨폰을 편집해 연결된 스킬을 지정하세요."
+      }
+    },
+    "EFFECT": {
+      "chilled": "칠드",
+      "confused": "컨퓨즈드",
+      "corrosive": "커로시브",
+      "cover": "커버",
+      "dazed": "데이즈드",
+      "deafened": "데프нд",
+      "fatigued": "패티그드",
+      "frightened": "프라이트нд",
+      "hazed": "헤이즈드",
+      "hobbled": "호블드",
+      "immobilized": "이모빌라이즈드",
+      "invisible_improved": "인비저블 (임프루브드)",
+      "nauseated": "노지에이티드",
+      "panicked": "패닉드",
+      "petrified": "페트리파이드",
+      "poisoned": "포이즌드",
+      "silent": "사일런트",
+      "silent_improved": "사일런트 (임프루브드)",
+      "stilled": "스틸드",
+      "wet": "웻",
+      "zapped": "재프트",
+      "sensorLock": "센서 락드",
+      "cerebropathy": "매트릭스: 세레브로파시",
+      "cybervirus": "매트릭스: 사이버바이러스",
+      "psychotropic": "매트릭스: 사이코트로픽",
+      "bleeding": "블리딩",
+      "disabled": "디스에이블드",
+      "muted": "뮤트드",
+      "offbalance": "오프-밸런스",
+      "aceinthehand": "소셜: 에이스 인 더 핸드",
+      "fishoutofwater": "소셜: 피쉬 아웃 오브 워터",
+      "misdirected": "소셜: 미스디렉티드",
+      "follower": "소셜: 팔로워",
+      "smitten": "소셜: 스미튼",
+      "suckered": "소셜: 석커드",
+      "irradiated": "이래디에이티드"
+    }
+  },
+  "skill": {
+    "astral": "아스트랄",
+    "athletics": "애슬레틱스",
+    "biotech": "바이오테크",
+    "close_combat": "클로즈 컴뱃",
+    "con": "콘",
+    "conjuring": "컨저링",
+    "cracking": "크래킹",
+    "electronics": "일렉트로닉스",
+    "enchanting": "인챈팅",
+    "engineering": "엔지니어링",
+    "exotic_weapons": "엑조틱 웨폰",
+    "firearms": "파이어암",
+    "influence": "인플루언스",
+    "outdoors": "아웃도어",
+    "perception": "퍼셉션",
+    "piloting": "파일로팅",
+    "sorcery": "소서리",
+    "stealth": "스텔스",
+    "tasking": "태스킹"
+  }
+}
