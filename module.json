@@ -2,7 +2,7 @@
     "id": "shadowrun-6th-ko-translation",
     "title": "Shadowrun 6th Edition - Korean Translation",
     "description": "섀도러런 6판 한국어 번역 모듈",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "compatibility": {
         "minimum": "12",
         "verified": "12",
