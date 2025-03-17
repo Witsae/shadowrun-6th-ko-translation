@@ -27,7 +27,7 @@
     "relationships": {
         "systems": [
             {
-                "id": "sr6",
+                "id": "shadowrun6-eden",
                 "type": "system",
                 "manifest": "https://github.com/yjeroen/foundry-shadowrun6-eden/releases/latest/download/system.json",
                 "compatibility": {
