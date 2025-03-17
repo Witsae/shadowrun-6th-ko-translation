@@ -9,8 +9,8 @@ export class SR6KoreanTranslation {
     static initialize() {
         console.log('Shadowrun 6th Edition - Korean Translation | Initializing Module');
         
-        // 모듈이 로드될 때 언어 설정 확인
-        if (game.settings.get("core", "language") === "ko") {
+        // Foundry VTT 12 버전에서는 game.i18n.lang을 사용하여 현재 언어 확인
+        if (game.i18n.lang === "ko") {
             console.log('Shadowrun 6th Edition - Korean Translation | Korean language detected');
         }
     }
